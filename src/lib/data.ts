@@ -6,10 +6,10 @@ export const skills = [
   { name: "Deep Learning", category: "AI & Machine Learning" },
   { name: "Neural Networks", category: "AI & Machine Learning" },
   { name: "Computer Vision", category: "AI & Machine Learning" },
-  { name: "NLP", category: "AI & Machine Learning" },
+  { name: "RAG", category: "AI & Machine Learning" },
   { name: "Model Fine-Tuning", category: "AI & Machine Learning" },
   { name: "Feature Engineering", category: "AI & Machine Learning" },
-  { name: "Pretrained Models", category: "AI & Machine Learning" },
+  { name: "AI Agent", category: "AI & Machine Learning" },
 
   // Programming & Frameworks
   { name: "Python", category: "Programming & Frameworks" },
@@ -18,23 +18,23 @@ export const skills = [
   { name: "Scikit-learn", category: "Programming & Frameworks" },
   { name: "OpenCV", category: "Programming & Frameworks" },
   { name: "Flask/FastAPI", category: "Programming & Frameworks" },
-  { name: "Java", category: "Programming & Frameworks" },
-  { name: "C++/C", category: "Programming & Frameworks" },
+  { name: "React", category: "Programming & Frameworks" },
+  { name: "JavaScript", category: "Programming & Frameworks" },
   
   // Data Science & Analytics
   { name: "Data Analysis", category: "Data Science & Analytics" },
   { name: "Pandas & NumPy", category: "Data Science & Analytics" },
-  { name: "Data Visualization", category: "Data Science & Analytics" },
+  { name: "Vector DB", category: "Data Science & Analytics" },
   { name: "Statistical Analysis", category: "Data Science & Analytics" },
   { name: "SQL", category: "Data Science & Analytics" },
-  { name: "Jupyter Notebooks", category: "Data Science & Analytics" },
+  { name: "Grapg DB", category: "Data Science & Analytics" },
   { name: "Matplotlib/Seaborn", category: "Data Science & Analytics" },
   { name: "Data Preprocessing", category: "Data Science & Analytics" },
 
   // MLOps & Integration
   { name: "Model Deployment", category: "MLOps & Integration" },
   { name: "API Integration", category: "MLOps & Integration" },
-  { name: "LLM APIs", category: "MLOps & Integration" },
+  { name: "Web Service", category: "MLOps & Integration" },
   { name: "CI/CD Pipelines", category: "MLOps & Integration" },
   { name: "Model Monitoring", category: "MLOps & Integration" },
   { name: "Docker", category: "MLOps & Integration", logoUrl: "https://iili.io/KjVscWF.md.png" },

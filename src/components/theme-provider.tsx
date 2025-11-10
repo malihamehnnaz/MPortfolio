@@ -12,7 +12,18 @@ React.useEffect(() => {
 }, [])
 
 if (!mounted) {
-  return <>{children}</>
+  return <div suppressHydrationWarning>{children}</div>
 }
-  return <NextThemesProvider {...props}>{children}</NextThemesProvider>
+
+
+  return (<NextThemesProvider
+  attribute="class"
+  defaultTheme="system"
+  enableSystem
+  disableTransitionOnChange
+  {...props}
+>
+  {children}
+</NextThemesProvider>
+)
 }

@@ -39,7 +39,7 @@ export default function HeroSection() {
             </AnimatedDiv>
             <AnimatedDiv delay="0.1s">
                 <p className="mt-3 text-2xl font-semibold bg-gradient-to-r from-purple-500 to-blue-500 bg-clip-text text-transparent">
-                    Innovation & Technology Leader
+                    Innovation Team Manager
                 </p>
             </AnimatedDiv>
             <AnimatedDiv delay="0.2s">
@@ -73,18 +73,16 @@ export default function HeroSection() {
                         <p className="text-xs text-muted-foreground">+880 1755839248</p>
                     </div>
                 </a>
-                <a href="https://github.com/MalihaMehnaz" target="_blank" rel="noopener noreferrer" className="group flex items-center gap-3 p-3 rounded-lg bg-secondary hover:bg-primary/10 border border-border transition-all">
+                <a href="https://github.com/malihamehnnaz" target="_blank" rel="noopener noreferrer" className="group flex items-center gap-3 p-3 rounded-lg bg-secondary hover:bg-primary/10 border border-border transition-all">
                     <Github className="h-6 w-6 text-primary" />
                     <div>
                         <p className="font-semibold text-sm">GitHub</p>
-                        <p className="text-xs text-muted-foreground">/MalihaMehnaz</p>
                     </div>
                 </a>
-                <a href="https://www.linkedin.com/in/maliha-mehnaz-45763b156/" target="_blank" rel="noopener noreferrer" className="group flex items-center gap-3 p-3 rounded-lg bg-secondary hover:bg-primary/10 border border-border transition-all">
+                <a href="https://www.linkedin.com/in/maliha-mehnaz-dub/" target="_blank" rel="noopener noreferrer" className="group flex items-center gap-3 p-3 rounded-lg bg-secondary hover:bg-primary/10 border border-border transition-all">
                     <Linkedin className="h-6 w-6 text-primary" />
                     <div>
                         <p className="font-semibold text-sm">LinkedIn</p>
-                        <p className="text-xs text-muted-foreground">/maliha-mehnaz</p>
                     </div>
                 </a>
           </AnimatedDiv>

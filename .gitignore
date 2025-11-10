@@ -4,6 +4,7 @@
 /node_modules
 node_modules
 my-local-cache
+/my-local-cache
 /.pnp
 .pnp.*
 .yarn/*
