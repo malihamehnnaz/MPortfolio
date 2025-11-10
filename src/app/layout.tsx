@@ -8,7 +8,7 @@ import { ThemeProviderWrapper } from '@/components/theme-provider-wrapper'; // C
 
 export const metadata: Metadata = {
   title: 'Maliha Mehnaz Portfolio',
-  description: 'Portfolio of Maliha Mehnaz, a Software Developer.',
+  description: 'Portfolio of Maliha Mehnaz, a AI/ML Team Lead.',
 };
 
 export default function RootLayout({
@@ -28,8 +28,8 @@ export default function RootLayout({
       <body className={cn('font-body antialiased bg-background text-foreground mobile-cursor-none')}>
         <ThemeProviderWrapper
           attribute="class"
-          defaultTheme="dark"
-          enableSystem={false}
+          defaultTheme="system"
+          enableSystem={true}
           disableTransitionOnChange={true}
           storageKey='theme'
         >

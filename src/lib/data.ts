@@ -74,11 +74,11 @@ export const experiences = [
     logo: "https://i.ibb.co/1tS4Mp0K/Dexian-Logo-1-1024x1024-png.webp",
     description: "Leading a high-performing AI/ML and software development team focused on building next-generation digital solutions.",
     responsibilities: [
-        "Managing Generative AI initiatives, including development of agentic systems, CI/CD automation, and AI deployment pipelines.",
-        "Overseeing Azure Cloud deployments for enterprise clients, ensuring scalability, performance, and cost optimization.",
-        "Gathering and analyzing business requirements and converting them into technical deliverables.",
-        "Conducting client demos, stakeholder presentations, and proof-of-concept sessions to validate product direction.",
-        "Managing end-to-end project lifecycle: planning, architecture design, sprint execution, quality assurance, and delivery.",
+        "Engineered and deployed 10+ enterprise AI/ML solutions on Azure ML and Kubernetes, improving operational efficiency by 30% and reducing manual workloads by 12%.",
+        "Built and productionized LLM-based agentic systems using LangGraph, LangChain, and Azure OpenAI, improving decision accuracy by 15% and cutting turnaround time by 25%.",
+        "Simplified model deployment pipelines via Docker, GitHub Actions, and CI/CD, reducing release cycles from 2 weeks to 5 days and improving reliability by 40%.",
+        "Implemented retrieval-augmented generation (RAG) pipelines using vector databases, enhancing LLM response precision and increasing client adoption by 25%.",
+        "Established standardized MLOps governance with MLflow and monitoring dashboards, reducing rollback incidents by 30%.",
     ],
     achievements: []
   },
@@ -91,11 +91,11 @@ export const experiences = [
     logo: "https://i.ibb.co/3mXkWxTk/download.jpg",
     description: "Developed and deployed Python-based AI systems to automate business analytics and customer insights, including predictive maintenance and personalized recommendation engines.",
     responsibilities: [
-      "Architected and maintained scalable MLOps pipelines using tools like Docker, Kubernetes, and cloud platforms for continuous training, deployment, and monitoring of AI models.",
-      "Led a cross-functional development team for frontend (Flutter) and backend solutions, overseeing a portfolio of 5+ concurrent software projects.",
-      "Designed database policies for access, recovery, and performance optimization of high-volume data stores.",
-      "Managed the entire Software Development Life Cycle (SDLC) from planning to deployment.",
-      "Mentored junior AI/ML developers on best practices for coding, model validation, and deployment strategies.",
+      "Built predictive maintenance models using Scikit-learn and XGBoost, reducing equipment downtime by 22% and saving ~$9,000 annually.",
+      "Improved customer segmentation accuracy by 28% through advanced feature engineering and model optimization.",
+      "Designed and maintained ETL workflows processing over 1M+ records, enhancing data integrity and training performance.",
+      "Developed Power BI dashboards for real-time analytics, cutting decision latency by 35%.",
+      "Mentored a 5-member AI team, improving code quality, sprint velocity, and ML best-practice adoption by 20%.",
     ],
     achievements: []
   },
@@ -108,10 +108,11 @@ export const experiences = [
     logo: "https://i.ibb.co/4wzLmx2K/65ffda90d2372028bed532d6-Golden-Harvest.jpg",
     description: "Designed, developed, and deployed scalable software solutions for enterprise clients, primarily utilizing Python for backend services.",
     responsibilities: [
-        "Implemented data mining and model-based analytics using machine learning algorithms to solve classification and regression problems for business intelligence.",
-        "Conducted extensive data preprocessing and cleaning on diverse datasets (structured and unstructured) to ensure high-quality inputs for model training and analysis.",
-        "Assisted in the development and maintenance of core ML services, including feature engineering and initial model validation, improving predictive model robustness.",
-        "Prepared detailed technical documentation (API specifications, data flow diagrams) and project schedules, utilizing Agile/Scrum methodologies for timely delivery.",
+        "Developed Python-based automation scripts and APIs that saved over 300 staff hours monthly through workflow optimization.",
+        "Created ML-powered analytics dashboards with Scikit-learn and Plotly, improving reporting efficiency by 18%.",
+        "Preprocessed and cleaned 500K+ structured and unstructured data points, improving model accuracy by 20%.",
+        "Collaborated with QA and product teams under Agile delivery cycles, achieving 100% on-time project completion.",
+        "Optimized backend logic, reducing server response time by 20% and improving API performance.",
     ],
     achievements: []
   }

@@ -41,7 +41,7 @@ export default function ProjectCard({ project, index }: ProjectCardProps) {
       <div className="flex-grow">
         <h3 className="text-xl font-bold text-foreground transition-colors duration-300 group-hover:text-black dark:group-hover:text-white">{project.title}</h3>
         <p className="mt-2 text-sm text-muted-foreground line-clamp-3 transition-colors duration-300 group-hover:text-gray-800 dark:group-hover:text-gray-300">{project.description}</p>
-        
+
         <div className="mt-4 flex flex-wrap gap-2">
           {project.tags.map((tag) => (
             <Badge key={tag} variant="secondary" className="bg-secondary/80 text-secondary-foreground text-xs">
@@ -52,13 +52,10 @@ export default function ProjectCard({ project, index }: ProjectCardProps) {
       </div>
 
       <div className="mt-6">
-         <div className={cn(
-            "h-1.5 w-full rounded-full mb-4",
-             isEven ? "bg-gradient-to-r from-purple-500 to-blue-500" : "bg-gradient-to-r from-blue-500 to-pink-500"
-         )}></div>
+
         <Button asChild className={cn(
             "w-full text-white transition-all duration-300",
-            isEven ? "bg-gradient-to-r from-purple-500 to-blue-500 hover:shadow-blue-500/50" : "bg-gradient-to-r from-blue-500 to-pink-500 hover:shadow-pink-500/50",
+            isEven ? "bg-gradient-to-r from-purple-400 to-blue-800 hover:shadow-blue-500/50" : "bg-gradient-to-r from-blue-500 to-purple-500 hover:shadow-pink-500/50",
             "hover:shadow-lg hover:scale-105"
         )}>
           <Link href={project.liveUrl} target="_blank" rel="noopener noreferrer">

@@ -28,7 +28,6 @@ export default function ProjectsSection() {
     <section id="projects" className="w-full py-16 md:py-24">
       <div className="container mx-auto max-w-7xl px-4 lg:px-8">
         <AnimatedDiv className="flex flex-col items-center text-center">
-          <Badge variant="outline" className="mb-4 font-semibold">Portfolio</Badge>
           <h2 className="text-3xl font-bold tracking-tight sm:text-4xl">My Recent Work</h2>
           <p className="mt-4 max-w-2xl text-lg text-muted-foreground">
             A selection of my recent projects showcasing my skills in AI and software development.
@@ -54,7 +53,7 @@ export default function ProjectsSection() {
           ))}
         </AnimatedDiv>
         
-        <div className="mt-12 grid grid-cols-1 gap-8 md:grid-cols-2">
+        <div className="mt-12 grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3">
           {filteredProjects.map((project, index) => (
             <ProjectCard project={project} index={index} key={project.title} />
           ))}

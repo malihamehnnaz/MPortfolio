@@ -5,18 +5,18 @@ import { ChevronRight } from 'lucide-react';
 
 export default function AboutSection() {
   const stats = [
-    { value: '8+ Years', label: 'Experience' },
+    { value: '6+ Years', label: 'Experience' },
     { value: '50+', label: 'Projects Delivered' },
     { value: '12+', label: 'Team Members' },
-    { value: '10M+', label: 'Users Impacted' },
+    { value: '10k+', label: 'Users Impacted' },
   ];
 
   const expertise = [
-    "Machine Learning & Deep Learning Model Development",
+    "Machine Learning Model Development",
     "LLM Integration & Fine-tuning",
-    "Model Deployment & CI/CD Pipelines",
+    "Development & CI/CD Pipelines",
     "Computer Vision & NLP Applications",
-    "Speech Recognition & TTS Systems"
+    "Multi Modal, Multi Agent Systems", 
   ];
 
   return (
@@ -30,13 +30,13 @@ export default function AboutSection() {
             <div className="md:col-span-3">
                  <AnimatedDiv delay="0.1s">
                     <p className="text-sm text-muted-foreground text-left mb-4">
-                        I'm an AI Engineer with expertise in data science, machine learning, and deep learning. My passion lies in building intelligent systems that solve real-world problems.
+                        AI/ML Engineer with 6+ years of experience designing, training, and deploying scalable machine learning and generative AI solutions on Azure. 
                     </p>
                     <p className="text-sm text-muted-foreground text-left mb-4">
-                        With a strong background in predictive modeling, classification, and data analysis, I specialize in developing and deploying AI solutions that drive business value.
+                        Delivered production-grade models that cut deployment time by 60%, improved accuracy by 28%, and reduced cloud costs by 18%. 
                     </p>
                     <p className="text-sm text-muted-foreground text-left">
-                        I'm proficient in Python and ML frameworks like TensorFlow, scikit-learn, and OpenCV, and have experience integrating APIs like OpenAI, Gemini, and other LLMs for chatbot development and automation.
+                        Skilled in Python, PyTorch, Gen AI, and MLOps with a track record of translating complex data into actionable, high-impact insights at enterprise scale.
                     </p>
                 </AnimatedDiv>
             </div>
