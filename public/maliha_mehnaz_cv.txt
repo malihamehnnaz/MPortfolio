@@ -1,0 +1,50 @@
+Maliha Mehnaz
+Software Developer
+San Francisco, CA | (555) 123-4567 | maliha.mehnaz@email.com | linkedin.com/in/maliha-mehnaz | github.com/maliha-mehnaz
+
+Summary
+Highly motivated and experienced Software Developer with over 5 years of expertise in designing, developing, and deploying robust web applications. Proficient in a wide range of technologies including JavaScript, TypeScript, React, Next.js, and Node.js. Passionate about creating intuitive user experiences and scalable backend solutions. Seeking to leverage my skills to build innovative products.
+
+Skills
+- Languages: JavaScript (ES6+), TypeScript, HTML5, CSS3, Python
+- Front-End: React, Next.js, Redux, Tailwind CSS, Material-UI, Framer Motion
+- Back-End: Node.js, Express.js, NestJS
+- Databases: PostgreSQL, MongoDB, Firebase Firestore
+- Tools: Git, Docker, Webpack, Babel, Figma, Jira
+- Cloud: Vercel, AWS (EC2, S3), Google Cloud Platform
+
+Experience
+
+Senior Full-Stack Developer | Tech Solutions Inc. | Jan 2021 - Present
+- Led the architecture and development of a new SaaS platform, resulting in a 40% improvement in performance.
+- Mentored a team of 4 junior developers, fostering a culture of code quality and continuous learning.
+- Implemented a CI/CD pipeline using GitHub Actions and Docker, reducing deployment time by 50%.
+- Collaborated with product managers and designers to translate requirements into technical specifications.
+
+Mid-Level Software Engineer | Innovate Co. | Jun 2018 - Dec 2020
+- Developed and maintained key features for a high-traffic e-commerce website using React and Node.js.
+- Optimized application performance by identifying and resolving bottlenecks, improving page load times by 30%.
+- Participated in agile scrum ceremonies, contributing to sprint planning and backlog grooming.
+
+Junior Web Developer | Startup Hub | Jul 2017 - May 2018
+- Built responsive and accessible user interfaces for client websites using HTML, CSS, and JavaScript.
+- Assisted in the development of RESTful APIs to support front-end functionalities.
+- Gained hands-on experience with version control (Git) and modern development workflows.
+
+Projects
+
+AI-Powered E-commerce Platform
+- A full-stack e-commerce application featuring personalized product recommendations using a custom-built AI model.
+- Tech Stack: Next.js, TypeScript, Node.js, PostgreSQL, Genkit AI
+
+Real-time Collaborative Dashboard
+- A web app for team collaboration with real-time updates using WebSockets and a drag-and-drop interface.
+- Tech Stack: React, Firebase, Tailwind CSS, WebSockets
+
+Portfolio Website
+- My personal portfolio to showcase skills and projects, built with a focus on modern design and UX.
+- Tech Stack: Next.js, Framer Motion, Shadcn UI, Genkit AI
+
+Education
+Bachelor of Science in Computer Science
+University of California, Berkeley | 2013 - 2017
