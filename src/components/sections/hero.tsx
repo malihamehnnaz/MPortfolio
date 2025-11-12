@@ -58,33 +58,78 @@ export default function HeroSection() {
                     </Link>
                 </Button>
             </AnimatedDiv>
-            <AnimatedDiv delay="0.4s" className="mt-8 grid grid-cols-1 sm:grid-cols-2 gap-4 w-full max-w-md">
-                <a href="mailto:malihamehnazcse@gmail.com" className="group flex items-center gap-3 p-3 rounded-lg bg-secondary hover:bg-primary/10 border border-border transition-all">
-                    <Mail className="h-6 w-6 text-primary" />
-                    <div>
-                        <p className="font-semibold text-sm">Email</p>
-                        <p className="text-xs text-muted-foreground">malihamehnazcse@gmail.com</p>
-                    </div>
-                </a>
-                 <a href="tel:+8801755839248" className="group flex items-center gap-3 p-3 rounded-lg bg-secondary hover:bg-primary/10 border border-border transition-all">
-                    <Phone className="h-6 w-6 text-primary" />
-                    <div>
-                        <p className="font-semibold text-sm">Phone</p>
-                        <p className="text-xs text-muted-foreground">+880 1755839248</p>
-                    </div>
-                </a>
-                <a href="https://github.com/malihamehnnaz" target="_blank" rel="noopener noreferrer" className="group flex items-center gap-3 p-3 rounded-lg bg-secondary hover:bg-primary/10 border border-border transition-all">
-                    <Github className="h-6 w-6 text-primary" />
-                    <div>
-                        <p className="font-semibold text-sm">GitHub</p>
-                    </div>
-                </a>
-                <a href="https://www.linkedin.com/in/maliha-mehnaz-dub/" target="_blank" rel="noopener noreferrer" className="group flex items-center gap-3 p-3 rounded-lg bg-secondary hover:bg-primary/10 border border-border transition-all">
-                    <Linkedin className="h-6 w-6 text-primary" />
-                    <div>
-                        <p className="font-semibold text-sm">LinkedIn</p>
-                    </div>
-                </a>
+                        <AnimatedDiv delay="0.4s" className="mt-8 grid grid-cols-1 sm:grid-cols-2 gap-3 sm:gap-4 w-full max-w-2xl">
+                                <a
+                                    href="mailto:malihamehnazcse@gmail.com"
+                                    aria-label="Send email to malihamehnazcse@gmail.com"
+                                    className="group flex w-full h-full min-h-[96px] flex-col items-center justify-center gap-1 p-4 rounded-xl bg-secondary hover:bg-primary/10 border border-border transition-all"
+                                >
+                                    <div className="flex items-center gap-2">
+                                        <Mail className="h-5 w-5 md:h-6 md:w-6 text-primary" />
+                                        <span className="font-semibold text-sm">Email</span>
+                                    </div>
+                                                        <p
+                                                            className="text-xs sm:text-sm text-muted-foreground text-center truncate w-full max-w-[260px] mx-auto"
+                                                            title="malihamehnazcse@gmail.com"
+                                                        >
+                                                            malihamehnazcse@gmail.com
+                                                        </p>
+                                </a>
+
+                                <a
+                                    href="tel:+8801755839248"
+                                    aria-label="Call phone number +880 1755839248"
+                                    className="group flex w-full h-full min-h-[96px] flex-col items-center justify-center gap-1 p-4 rounded-xl bg-secondary hover:bg-primary/10 border border-border transition-all"
+                                >
+                                    <div className="flex items-center gap-2">
+                                        <Phone className="h-5 w-5 md:h-6 md:w-6 text-primary" />
+                                        <span className="font-semibold text-sm">Phone</span>
+                                    </div>
+                                                        <p
+                                                            className="text-xs sm:text-sm text-muted-foreground text-center truncate w-full max-w-[260px] mx-auto"
+                                                            title="+880 1755839248"
+                                                        >
+                                                            +880 1755839248
+                                                        </p>
+                                </a>
+
+                                <a
+                                    href="https://github.com/malihamehnnaz"
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    aria-label="Open GitHub profile"
+                                    className="group flex w-full h-full min-h-[96px] flex-col items-center justify-center gap-1 p-4 rounded-xl bg-secondary hover:bg-primary/10 border border-border transition-all"
+                                >
+                                    <div className="flex items-center gap-2">
+                                        <Github className="h-5 w-5 md:h-6 md:w-6 text-primary" />
+                                        <span className="font-semibold text-sm">GitHub</span>
+                                    </div>
+                                                        <p
+                                                            className="text-xs sm:text-sm text-muted-foreground text-center truncate w-full max-w-[260px] mx-auto"
+                                                            title="@malihamehnnaz"
+                                                        >
+                                                            @malihamehnnaz
+                                                        </p>
+                                </a>
+
+                                <a
+                                    href="https://www.linkedin.com/in/maliha-mehnaz-dub/"
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    aria-label="Open LinkedIn profile"
+                                    className="group flex w-full h-full min-h-[96px] flex-col items-center justify-center gap-1 p-4 rounded-xl bg-secondary hover:bg-primary/10 border border-border transition-all"
+                                >
+                                    <div className="flex items-center gap-2">
+                                        <Linkedin className="h-5 w-5 md:h-6 md:w-6 text-primary" />
+                                        <span className="font-semibold text-sm">LinkedIn</span>
+                                    </div>
+                                                        <p
+                                                            className="text-xs sm:text-sm text-muted-foreground text-center truncate w-full max-w-[260px] mx-auto"
+                                                            title="/in/maliha-mehnaz-dub"
+                                                        >
+                                                            /in/maliha-mehnaz-dub
+                                                        </p>
+                                </a>
           </AnimatedDiv>
           </div>
           <AnimatedDiv className="relative hidden lg:flex justify-center" delay="0.4s">

@@ -134,38 +134,181 @@ export const education = [
 ];
 
 export const projects = [
-    {
-      title: "AI-Powered Sales Insights Dashboard",
-      description: "A comprehensive dashboard providing real-time sales analytics and predictive insights to drive strategic decision-making.",
-      tags: ["Python", "Flask", "React", "D3.js", "Machine Learning"],
-      image: "project-sales-dashboard",
-      githubUrl: "#",
-      liveUrl: "#"
-    },
-    {
-      title: "Customer Churn Prediction Engine",
-      description: "A machine learning model that identifies at-risk customers, enabling proactive retention strategies and reducing churn.",
-      tags: ["Python", "Scikit-learn", "Pandas", "FastAPI", "Docker", "Machine Learning"],
-      image: "project-churn-prediction",
-      githubUrl: "#",
-      liveUrl: "#"
-    },
-    {
-      title: "Automated Code Review Assistant",
-      description: "An AI-powered tool that analyzes pull requests, suggests improvements, and enforces coding standards, integrated with GitHub Actions.",
-      tags: ["Generative AI", "LangChain", "CI/CD", "Next.js", "GenAI"],
-      image: "project-code-review",
-      githubUrl: "#",
-      liveUrl: "#"
-    },
-    {
-        title: "Intelligent Document Processing (IDP) System",
-        description: "An automated system for extracting, classifying, and validating data from unstructured documents using OCR and NLP.",
-        tags: ["Python", "Tesseract", "OpenCV", "Spacy", "AWS Textract", "Machine Learning"],
-        image: "project-idp",
-        githubUrl: "#",
-        liveUrl: "#"
-    }
+  {
+    title: "Walled Garden",
+    description: "Empowers sales teams with guided technical knowledge and the right questions for meaningful client discussions, reducing dependency on solution engineers.",
+    tags: ["AI", "Knowledge Systems", "Sales Enablement"],
+    githubUrl: "#",
+    liveUrl: "#"
+  },
+  {
+    title: "RoleplAI",
+    description: "AI-driven simulation tool that enables users to practice real-life scenarios with feedback in a gamified environment.",
+    tags: ["Generative AI", "NLP", "LLMs", "Simulation Frameworks"],
+    githubUrl: "#",
+    liveUrl: "#"
+  },
+  {
+    title: "Proposal Writer Assistant",
+    description: "Automates proposal generation by leveraging a centralized repository of past responses to extract and rephrase relevant text.",
+    tags: ["Generative AI", "LLMs", "RAG", "Document Intelligence"],
+    githubUrl: "#",
+    liveUrl: "#"
+  },
+  {
+    title: "RFP Matcher (In Progress)",
+    description: "AI solution that extracts key details from RFPs and generates a structured response outline to accelerate bid preparation.",
+    tags: ["AI", "Document Processing", "Workflow Automation"],
+    githubUrl: "#",
+    liveUrl: "#"
+  },
+  {
+    title: "Foresight",
+    description: "Predictive AI that forecasts service tickets using historical data to optimize IT support operations.",
+    tags: ["Machine Learning", "Predictive Modeling", "Data Analytics", "Automation"],
+    githubUrl: "#",
+    liveUrl: "#"
+  },
+  {
+    title: "Next Gen Call Center",
+    description: "Performs real-time transcription and sentiment analysis of customer calls to trigger proactive management alerts.",
+    tags: ["AI", "Speech AI", "Sentiment Analysis", "Real-time Processing"],
+    githubUrl: "#",
+    liveUrl: "#"
+  },
+  {
+    title: "Query Craft",
+    description: "Lets users query databases and Excel files in natural language, reducing dependency on developers for ad-hoc reports.",
+    tags: ["AI", "NLP", "Data Analytics", "Visualization"],
+    githubUrl: "#",
+    liveUrl: "#"
+  },
+  {
+    title: "Answer AI",
+    description: "Converts historical responses into a searchable knowledge base for compliance and customer service automation.",
+    tags: ["Generative AI", "RAG", "Knowledge Management", "LLMs"],
+    githubUrl: "#",
+    liveUrl: "#"
+  },
+  {
+    title: "Code Guard",
+    description: "Scans repositories for vulnerabilities, secret leaks, and outdated dependencies; generates SBOM for improved compliance.",
+    tags: ["DevSecOps", "SAST", "Software Compliance"],
+    githubUrl: "#",
+    liveUrl: "#"
+  },
+  {
+    title: "Geo Viz",
+    description: "Visualizes GIS-based flight paths to ensure pipeline coverage and optimize drone inspections.",
+    tags: ["Geospatial Analytics", "Visualization", "Automation"],
+    githubUrl: "#",
+    liveUrl: "#"
+  },
+  {
+    title: "BPMN Generator",
+    description: "Uses image recognition to generate BPMN workflow diagrams automatically from screenshots.",
+    tags: ["Vision AI", "Process Automation", "Workflow Modeling"],
+    githubUrl: "#",
+    liveUrl: "#"
+  },
+  {
+    title: "Agent Dexi (Customer Intelligence Report)",
+    description: "Proprietary intelligent agent automating web data collection and analysis for accurate, timely company insights.",
+    tags: ["Generative AI", "LLMs", "Web Scraping", "Data Analytics"],
+    githubUrl: "#",
+    liveUrl: "#"
+  },
+  {
+    title: "Comment Classifier",
+    description: "Enables non-technical users to train text classification models on their own datasets easily.",
+    tags: ["Machine Learning", "AutoML", "Text Classification", "Data Labeling"],
+    githubUrl: "#",
+    liveUrl: "#"
+  },
+  {
+    title: "ChatPath",
+    description: "Converts static decision-tree images into interactive, dynamic chatbot experiences.",
+    tags: ["Vision AI", "Decision Support", "Automation"],
+    githubUrl: "#",
+    liveUrl: "#"
+  },
+  {
+    title: "Speaking Notes",
+    description: "Generates slide-specific speaker notes from PowerPoint files using Azure Vision Studio.",
+    tags: ["OCR", "Presentation Automation", "AI Productivity"],
+    githubUrl: "#",
+    liveUrl: "#"
+  },
+  {
+    title: "ServiceNow Self-Help LLM",
+    description: "Uses generative AI to automatically generate IT troubleshooting guides and empower self-service users.",
+    tags: ["Generative AI", "LLM", "ITSM", "Self-Service AI"],
+    githubUrl: "#",
+    liveUrl: "#"
+  },
+  {
+    title: "D-Genie",
+    description: "Automates code refactoring and unit test generation using reflection and generative AI under a TDD framework.",
+    tags: ["Generative AI", "GenAI", "Software Quality", "DevOps"],
+    githubUrl: "#",
+    liveUrl: "#"
+  },
+  {
+    title: "Check List Assistant",
+    description: "Tracks conversation points and dynamically checks off meeting items in real-time using AI.",
+    tags: ["AI Assistants", "Productivity Tools", "Workflow Automation"],
+    githubUrl: "#",
+    liveUrl: "#"
+  },
+  {
+    title: "Scrum Snapshot",
+    description: "Integrates with Azure Boards to automate project status summaries and email reporting.",
+    tags: ["DevOps", "Automation", "Agile Reporting"],
+    githubUrl: "#",
+    liveUrl: "#"
+  },
+  {
+    title: "Magic Match",
+    description: "Analyzes resumes and job descriptions to evaluate candidate-job fit with AI-driven scoring.",
+    tags: ["HR Tech", "Semantic Search", "AI Matching"],
+    githubUrl: "#",
+    liveUrl: "#"
+  },
+  {
+    title: "Agentic Warehouse Assistant",
+    description: "AI agents extract product data online and auto-update Excel inventory sheets, improving accuracy and logistics.",
+    tags: ["Generative AI", "Agentic AI", "Data Automation", "Supply Chain"],
+    githubUrl: "#",
+    liveUrl: "#"
+  },
+  {
+    title: "Knowledge Engine",
+    description: "AI-driven knowledge retrieval platform enabling fast, intelligent document search across large repositories.",
+    tags: ["Generative AI", "RAG", "Knowledge Graphs", "Enterprise Search"],
+    githubUrl: "#",
+    liveUrl: "#"
+  },
+  {
+    title: "ReTurnVision",
+    description: "Automates laptop return inspections using AI-based defect detection and classification.",
+    tags: ["Computer Vision", "QA Automation", "Predictive Analytics", "Machine Learning"],
+    githubUrl: "#",
+    liveUrl: "#"
+  },
+  {
+    title: "BizFlow",
+    description: "Generates BPMN diagrams and requirement docs from meeting transcripts and recordings for business analysts.",
+    tags: ["NLP", "Workflow Generation", "Automation"],
+    githubUrl: "#",
+    liveUrl: "#"
+  },
+  {
+    title: "QATron",
+    description: "Transforms manual test cases into executable Selenium scripts using an AI-powered automation testing suite.",
+    tags: ["Generative AI", "Automation", "LLM", "Playwright", "Selenium"],
+    githubUrl: "#",
+    liveUrl: "https://qatron.azurewebsites.net"
+  }
 ];
 
 export const companies = [

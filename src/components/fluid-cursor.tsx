@@ -1,3 +1,4 @@
+// @ts-nocheck
 'use client';
 
 import { useEffect, useRef, useState } from 'react';
@@ -848,6 +849,11 @@ export default function FluidCursor() {
             c.b *= 0.15;
             return c;
         }
+
+        // Ensure initial pointer color starts as a generated rainbow color (not the default placeholder)
+        pointers.forEach(p => {
+            p.color = generateColor();
+        });
 
         function HSVtoRGB(h: number, s: number, v: number) {
             let r: number = 0, g: number = 0, b: number = 0, i: number, f: number, p: number, q: number, t: number;
