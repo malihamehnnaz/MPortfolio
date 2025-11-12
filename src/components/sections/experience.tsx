@@ -1,66 +1,101 @@
 
 import { experiences } from '@/lib/data';
-import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { AnimatedDiv } from '../animated-div';
 import { Badge } from '../ui/badge';
 import Image from 'next/image';
 import Link from 'next/link';
-import { CheckCircle } from 'lucide-react';
+import { ArrowRight } from 'lucide-react';
 
 export default function ExperienceSection() {
   return (
-    <section id="experience" className="w-full py-12 md:py-16">
-      <div className="container mx-auto max-w-4xl px-4 lg:px-8">
-        <AnimatedDiv className="flex flex-col items-center text-center">
-          <h2 className="text-3xl font-bold tracking-tight sm:text-4xl section-header">Professional Experience</h2>
-          <p className="mt-4 max-w-2xl text-lg text-muted-foreground">
-            My journey through the tech industry.
+  <section id="experience" className="w-full py-8 md:py-12">
+      <div className="container mx-auto max-w-6xl px-4 lg:px-8">
+        {/* Header (aligned with other sections) */}
+        <AnimatedDiv className="flex flex-col items-center text-center mb-12">
+          <h2 className="text-3xl font-bold tracking-tight sm:text-4xl section-header">Experience</h2>
+          <p className="mt-3 text-lg text-muted-foreground max-w-2xl">
+            Crafting intelligent solutions across industry-leading organizations
           </p>
         </AnimatedDiv>
 
-        <div className="relative mt-12 space-y-8">
+        {/* Experience Grid */}
+        <div className="grid grid-cols-1 gap-8">
           {experiences.map((exp, index) => (
-            <AnimatedDiv key={index}>
-              <Card className="w-full overflow-hidden shadow-lg transition-all duration-300 hover:shadow-primary/20 hover:border-primary/30 hover:scale-[1.02] hover:-translate-y-2 border border-border bg-card/80 backdrop-blur-sm">
-                <CardHeader>
-                  <div className="flex flex-col sm:flex-row items-start gap-4">
-                    <Link href={exp.companyUrl} target='_blank' rel='noopener noreferrer' className='flex-shrink-0'>
-                      <div className="h-16 w-16 rounded-lg flex items-center justify-center bg-gradient-to-br from-purple-500/20 to-blue-500/20 border border-primary/20">
-                          <Image
-                            src={exp.logo}
-                            alt={`${exp.company} logo`}
-                            width={56}
-                            height={56}
-                            className="h-14 w-14 object-contain"
-                          />
+            <AnimatedDiv key={index} delay={`${index * 80}ms`}>
+              <Link href={exp.companyUrl} target="_blank" rel="noopener noreferrer">
+                <div className="group relative cursor-pointer">
+                  {/* Card */}
+                  <div className="relative rounded-2xl border border-border/40 bg-card/50 backdrop-blur-sm overflow-hidden transition-all duration-500 hover:border-primary/50 hover:bg-card/80 hover:shadow-xl hover:shadow-primary/10">
+                    {/* Animated glow top border */}
+                    <div className="absolute top-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-primary/40 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
+
+                    <div className="p-8 md:p-10">
+                      <div className="flex flex-col md:flex-row md:items-start gap-8">
+                        {/* Logo */}
+                        <div className="flex-shrink-0">
+                          <div className="h-24 w-24 rounded-xl flex items-center justify-center bg-card border border-primary/20 group-hover:border-primary/40 transition-all duration-300">
+                            <Image
+                              src={exp.logo}
+                              alt={`${exp.company} logo`}
+                              width={80}
+                              height={80}
+                              className="h-20 w-20 object-contain"
+                              priority
+                            />
+                          </div>
+                        </div>
+
+                        {/* Content */}
+                        <div className="flex-grow">
+                          {/* Title & Period */}
+                          <div className="flex flex-col sm:flex-row sm:items-start sm:justify-between gap-4 mb-3">
+                            <div>
+                              <h3 className="text-2xl md:text-3xl font-bold text-foreground mb-2">
+                                {exp.role}
+                              </h3>
+                              <p className="text-lg text-primary font-semibold group-hover:text-primary/90 transition-colors">
+                                {exp.company}
+                              </p>
+                              {exp.companyDetail && (
+                                <p className="text-sm text-muted-foreground mt-1">
+                                  {exp.companyDetail}
+                                </p>
+                              )}
+                            </div>
+                            <Badge
+                              variant="outline"
+                              className="w-fit h-fit text-xs font-medium bg-primary/5 border-primary/30 text-primary whitespace-nowrap"
+                            >
+                              {exp.period}
+                            </Badge>
+                          </div>
+
+                          {/* Description */}
+                          {exp.description && (
+                            <p className="text-base text-muted-foreground leading-relaxed mt-4">
+                              {exp.description}
+                            </p>
+                          )}
+
+                          {/* Key achievements grid */}
+                          {(exp.responsibilities?.length > 0 || exp.achievements?.length > 0) && (
+                            <div className="mt-6 grid grid-cols-1 sm:grid-cols-2 gap-4">
+                              {[...(exp.responsibilities || []), ...(exp.achievements || [])].slice(0, 4).map((item, i) => (
+                                <div key={i} className="flex items-start gap-3">
+                                  <ArrowRight className="h-4 w-4 text-primary mt-1 flex-shrink-0 group-hover:translate-x-0.5 transition-transform" />
+                                  <span className="text-sm text-muted-foreground group-hover:text-foreground transition-colors">
+                                    {item}
+                                  </span>
+                                </div>
+                              ))}
+                            </div>
+                          )}
+                        </div>
                       </div>
-                    </Link>
-                    <div className="flex-grow">
-                      <div className="flex flex-col sm:flex-row justify-between sm:items-center">
-                         <CardTitle className="text-xl">{exp.role}</CardTitle>
-                         <Badge variant="outline" className="mt-2 sm:mt-0 bg-secondary border-border/50 text-muted-foreground">{exp.period}</Badge>
-                      </div>
-                      <p className="font-semibold text-primary">{exp.company}</p>
-                      {exp.companyDetail && <p className="text-sm text-muted-foreground">{exp.companyDetail}</p>}
                     </div>
                   </div>
-                </CardHeader>
-                <CardContent className="pl-6 sm:pl-8">
-                    {exp.description && (
-                         <p className="text-sm text-muted-foreground mb-4">{exp.description}</p>
-                    )}
-                    {(exp.responsibilities && exp.responsibilities.length > 0 || exp.achievements && exp.achievements.length > 0) && (
-                      <ul className="space-y-2 text-sm text-muted-foreground">
-                        {[...(exp.responsibilities || []), ...(exp.achievements || [])].map((item, i) => (
-                            <li key={i} className="flex items-start gap-2">
-                                <CheckCircle className="h-4 w-4 mt-0.5 flex-shrink-0 text-primary" />
-                                <span>{item}</span>
-                            </li>
-                        ))}
-                      </ul>
-                    )}
-                </CardContent>
-              </Card>
+                </div>
+              </Link>
             </AnimatedDiv>
           ))}
         </div>

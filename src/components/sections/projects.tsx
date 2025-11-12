@@ -12,26 +12,24 @@ import { cn } from '@/lib/utils';
 export default function ProjectsSection() {
   const [selectedCategory, setSelectedCategory] = useState('All');
 
-  const categories = ['All', 'GenAI', 'Machine Learning'];
+  // Use assignments persisted in data.ts (project.assignment). This makes assignments part of the codebase.
+  // Projects import already includes an `assignment` field (null | 'Dexian' | 'Github').
 
-  const filteredProjects =
-    selectedCategory === 'All'
-      ? projects
-      : projects.filter((project) => {
-          if (selectedCategory === 'GenAI') {
-            return project.tags.includes('Generative AI');
-          }
-          return project.tags.includes(selectedCategory)
-        });
+  // Explicit categories: All projects, Dexian projects, and Github projects
+  const categories = ['All', 'Dexian', 'Github'];
+
+  const filteredProjects = projects.filter((project) => {
+    const assignment = project.assignment as string[] | undefined | null;
+    if (selectedCategory === 'All') return true;
+    if (!assignment || !Array.isArray(assignment)) return false;
+    return assignment.includes(selectedCategory);
+  });
 
   return (
-    <section id="projects" className="w-full py-16 md:py-24">
+  <section id="projects" className="w-full py-8 md:py-12">
       <div className="container mx-auto max-w-7xl px-4 lg:px-8">
         <AnimatedDiv className="flex flex-col items-center text-center">
           <h2 className="text-3xl font-bold tracking-tight sm:text-4xl">My Recent Work</h2>
-          <p className="mt-4 max-w-2xl text-lg text-muted-foreground">
-            A selection of my recent projects showcasing my skills in AI and software development.
-          </p>
         </AnimatedDiv>
 
         <AnimatedDiv delay="0.1s" className="mt-8 mb-12 flex flex-wrap justify-center gap-2">

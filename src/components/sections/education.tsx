@@ -1,14 +1,14 @@
-
 import { education } from '@/lib/data';
 import { Card, CardHeader, CardTitle } from '@/components/ui/card';
 import { AnimatedDiv } from '../animated-div';
 import { Badge } from '../ui/badge';
 import { GraduationCap } from 'lucide-react';
 import Image from 'next/image';
+import { Separator } from '../ui/separator';
 
 export default function EducationSection() {
   return (
-    <section id="education" className="w-full bg-secondary/50 dark:bg-card py-12 md:py-16">
+  <section id="education" className="w-full py-8 md:py-12">
       <div className="container mx-auto max-w-4xl px-4 lg:px-8">
         <AnimatedDiv className="flex flex-col items-center text-center">
           <h2 className="text-3xl font-bold tracking-tight sm:text-4xl section-header">Education</h2>
@@ -33,6 +33,9 @@ export default function EducationSection() {
                          <Badge variant="outline" className="mt-1 sm:mt-0 border-primary/50 text-primary">{edu.period}</Badge>
                       </div>
                       <p className="font-semibold text-muted-foreground">{edu.institution}</p>
+                      {edu.thesis && (
+                        <p className="mt-1 text-sm italic text-muted-foreground">Thesis: {edu.thesis}</p>
+                      )}
                     </div>
                   </div>
                 </CardHeader>

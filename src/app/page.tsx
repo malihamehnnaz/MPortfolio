@@ -8,6 +8,7 @@ import AboutSection from '@/components/sections/about';
 import SkillsSection from '@/components/sections/skills';
 import ExperienceSection from '@/components/sections/experience';
 import EducationSection from '@/components/sections/education';
+import LanguageProficiencySection from '@/components/sections/language-proficiency';
 import ProjectsSection from '@/components/sections/projects';
 import ContactSection from '@/components/sections/contact';
 import Footer from '@/components/footer';
@@ -39,14 +40,17 @@ export default function Home() {
           <div id="experience" className="scroll-mt-24">
             <ExperienceSection />
           </div>
-          <div id="education" className="scroll-mt-24">
-            <EducationSection />
-          </div>
           <div id="projects" className="scroll-mt-24">
             <ProjectsSection />
           </div>
+          <div id="education" className="scroll-mt-24">
+            <EducationSection />
+          </div>
           <div id="skills" className="scroll-mt-24">
             <SkillsSection />
+          </div>
+          <div id="language-proficiency" className="scroll-mt-24">
+            <LanguageProficiencySection />
           </div>
           <div id="contact" className="scroll-mt-24">
             <ContactSection />

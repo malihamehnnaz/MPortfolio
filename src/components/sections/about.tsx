@@ -20,7 +20,7 @@ export default function AboutSection() {
   ];
 
   return (
-    <section id="about" className="w-full bg-secondary/50 dark:bg-card py-12 md:py-16">
+    <section id="about" className="w-full py-8 md:py-12">
       <div className="container mx-auto max-w-5xl px-4 lg:px-8">
         <AnimatedDiv className="flex flex-col items-center text-center mb-12">
             <h2 className="text-3xl font-bold tracking-tight sm:text-4xl section-header">About Me</h2>

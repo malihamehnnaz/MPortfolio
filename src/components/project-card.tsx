@@ -6,6 +6,7 @@ import { useEffect, useState } from 'react';
 import { Badge } from '@/components/ui/badge';
 import { Button } from '@/components/ui/button';
 import { Github, ExternalLink } from 'lucide-react';
+import Image from 'next/image';
 import { AnimatedDiv } from './animated-div';
 
 type ProjectCardProps = {
@@ -16,6 +17,7 @@ type ProjectCardProps = {
     githubUrl: string;
     liveUrl: string;
     image?: string; // unused in simplified card
+  assignment?: string[] | null;
   };
   index: number;
 };
@@ -44,6 +46,7 @@ export default function ProjectCard({ project, index }: ProjectCardProps) {
   const hasGithub = Boolean(project.githubUrl && project.githubUrl !== '#');
   const hasLive = Boolean(project.liveUrl && project.liveUrl !== '#');
   const showFooter = hasGithub || hasLive;
+  
 
   return (
     <div className="group relative">
@@ -54,7 +57,7 @@ export default function ProjectCard({ project, index }: ProjectCardProps) {
       </div>
       <AnimatedDiv
         delay={delay}
-        className="relative w-full h-full flex flex-col overflow-hidden rounded-2xl border border-border/50 bg-card px-6 pt-6 pb-1 shadow-sm transition-all duration-500 ease-out will-change-transform hover:shadow-lg hover:border-primary/40 hover:-translate-y-1 hover:scale-[1.02] focus-within:ring-1 focus-within:ring-primary/40"
+  className="relative w-full h-full flex flex-col overflow-hidden rounded-2xl border border-border/50 bg-card px-6 pt-6 pb-6 shadow-sm transition-all duration-500 ease-out will-change-transform hover:shadow-lg hover:border-primary/40 hover:-translate-y-1 hover:scale-[1.02] focus-within:ring-1 focus-within:ring-primary/40"
       >
       {/* Header: title only for a cleaner look */}
       <h3 className="text-[1.05rem] md:text-lg font-semibold text-foreground tracking-tight transition-colors group-hover:text-primary">
@@ -66,7 +69,7 @@ export default function ProjectCard({ project, index }: ProjectCardProps) {
         {project.description}
       </p>
 
-      {/* Technologies */}
+      {/* Technologies / tags (visible) */}
       {project.tags?.length ? (
         <div className="mt-4 flex flex-wrap gap-2.5">
           {project.tags.slice(0, 4).map((tag, i) => (
@@ -91,6 +94,8 @@ export default function ProjectCard({ project, index }: ProjectCardProps) {
         </div>
       ) : null}
 
+      {/* Top-left assignment labels hidden per user request */}
+
       {/* Footer: actions */}
       {showFooter && (
         <div className="mt-2 flex items-center justify-between">
@@ -114,6 +119,24 @@ export default function ProjectCard({ project, index }: ProjectCardProps) {
                 Live <ExternalLink className="h-3.5 w-3.5" />
               </Link>
             </Button>
+          )}
+        </div>
+      )}
+
+      {/* Bottom-right company/platform cue */}
+      {Array.isArray(project.assignment) && (
+        <div className="absolute bottom-3 right-3">
+          {project.assignment.includes('Github') && (
+            <div className="inline-flex items-center justify-center rounded-full bg-card/80 p-2 border border-border/30 shadow-sm" aria-hidden={false}>
+              <Github className="h-4 w-4 text-muted-foreground" />
+              <span className="sr-only">GitHub</span>
+            </div>
+          )}
+          {project.assignment.includes('Dexian') && (
+            <div className="inline-flex items-center gap-2 rounded-full bg-card/80 px-2 py-1 border border-border/30 shadow-sm">
+              <Image src="/logos/dexian.jpg" alt="Dexian" width={20} height={20} className="rounded-full object-contain" />
+              <span className="sr-only">Dexian</span>
+            </div>
           )}
         </div>
       )}

@@ -4,7 +4,7 @@ import { AnimatedDiv } from '../animated-div';
 
 export default function CompaniesSection() {
   return (
-    <section id="companies" className="w-full py-12">
+  <section id="companies" className="w-full py-8 md:py-12"> 
       <div className="container mx-auto max-w-7xl px-4 lg:px-8">
         <AnimatedDiv className="flex justify-center items-center gap-8 md:gap-12 lg:gap-16">
           {companies.map((company, index) => (

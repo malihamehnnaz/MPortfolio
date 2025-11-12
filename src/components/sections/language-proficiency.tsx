@@ -1,0 +1,77 @@
+"use client";
+
+import { AnimatedDiv } from '../animated-div';
+import { Card, CardContent, CardHeader, CardTitle } from '../ui/card';
+import { Separator } from '../ui/separator';
+
+export default function LanguageProficiencySection() {
+  const items = [
+    {
+      title: 'IELTS',
+      overall: '7.5',
+      details: [
+        { label: 'Listening', value: '8.0' },
+        { label: 'Reading', value: '7.5' },
+        { label: 'Writing', value: '7.0' },
+        { label: 'Speaking', value: '7.5' },
+      ],
+      note: 'Overall 7.5'
+    },
+    {
+      title: 'PTE Academic',
+      overall: '82',
+      details: [
+        { label: 'Listening', value: '79' },
+        { label: 'Reading', value: '90' },
+        { label: 'Writing', value: '89' },
+        { label: 'Speaking', value: '76' },
+      ],
+      note: 'Overall 82'
+    }
+  ];
+
+  return (
+  <section id="language-proficiency" className="w-full py-8 md:py-12">
+      <div className="container mx-auto max-w-4xl px-4 lg:px-8">
+        <AnimatedDiv className="flex flex-col items-center text-center mb-12">
+          <h2 className="text-3xl font-bold tracking-tight sm:text-4xl section-header">Language Proficiency</h2>
+          <p className="mt-3 text-lg text-muted-foreground max-w-2xl">Scores for major English proficiency tests.</p>
+        </AnimatedDiv>
+
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+          {items.map((test) => (
+            <AnimatedDiv key={test.title}>
+              <Card className="h-full shadow-lg rounded-2xl bg-card/50 border border-border/40">
+                <CardHeader className="px-6 pt-6">
+                  <div className="flex items-center justify-between w-full">
+                    <CardTitle className="text-xl font-semibold">{test.title}</CardTitle>
+                    <div className="text-3xl font-bold text-foreground">{test.overall}</div>
+                  </div>
+                  {test.note && <p className="mt-2 text-sm text-muted-foreground">{test.note}</p>}
+                </CardHeader>
+                <CardContent className="px-6 pb-6 pt-4">
+                  <div className="grid grid-cols-2 gap-4">
+                    {test.details.map((d) => (
+                      <div key={d.label} className="flex flex-col">
+                        <span className="text-sm text-muted-foreground">{d.label}</span>
+                        <span className="text-lg font-medium text-foreground">{d.value}</span>
+                        <div className="mt-2 h-2 w-full bg-border rounded-full overflow-hidden">
+                          <div
+                            className="h-full bg-primary"
+                            style={{ width: `${Math.min(100, Number(parseFloat(String(d.value)) / (test.title === 'IELTS' ? 9 : 90) * 100)).toFixed(0)}%` }}
+                          />
+                        </div>
+                      </div>
+                    ))}
+                  </div>
+                </CardContent>
+              </Card>
+            </AnimatedDiv>
+          ))}
+        </div>
+
+        <Separator className="my-10" />
+      </div>
+    </section>
+  );
+}

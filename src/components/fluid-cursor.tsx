@@ -24,13 +24,16 @@ export default function FluidCursor() {
             SIM_RESOLUTION: 128,
             DYE_RESOLUTION: 1024,
             CAPTURE_RESOLUTION: 512,
-            DENSITY_DISSIPATION: 1,
-            VELOCITY_DISSIPATION: 0.2,
+            // Increase dissipation so dye/velocity fade faster (smaller, shorter waves)
+            DENSITY_DISSIPATION: 1.25,
+            VELOCITY_DISSIPATION: 0.35,
             PRESSURE: 0.8,
             PRESSURE_ITERATIONS: 20,
-            CURL: 10,
-            SPLAT_RADIUS: 0.25,
-            SPLAT_FORCE: 6000,
+            // Lower curl to reduce turbulence and "wavy" swirls
+            CURL: 6,
+            // Smaller radius and weaker force = tighter, smaller splats
+            SPLAT_RADIUS: 0.14,
+            SPLAT_FORCE: 2800,
             SHADING: true,
             COLORFUL: true,
             COLOR_UPDATE_SPEED: 10,

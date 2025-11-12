@@ -13,7 +13,7 @@ export default function HeroSection() {
   const heroImage = PlaceHolderImages.find((img) => img.id === 'profile-hero');
 
   return (
-    <section id="home" className="relative w-full pt-8 pb-16 md:pt-16 md:pb-24 lg:pt-24 lg:pb-32">
+    <section id="home" className="relative w-full py-8 md:py-12 lg:py-16">
       <div className="container mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 items-center gap-12 lg:grid-cols-2 lg:gap-16">
           <AnimatedDiv className="relative flex lg:hidden justify-center" delay="0.4s">
@@ -44,20 +44,10 @@ export default function HeroSection() {
             </AnimatedDiv>
             <AnimatedDiv delay="0.2s">
                 <p className="mt-4 max-w-xl text-md text-muted-foreground">
-                    Generative AI | Cloud & Data Solutions | DevOps | Vector DB | Intelligent Automation
+                MSc in Information Technology | AI/ML & Gene AI Leader | Azure Cloud & DevOps | Agentic Systems | LangGraph | Python | Docker | Intelligent Solutions
                 </p>
             </AnimatedDiv>
-            <AnimatedDiv delay="0.3s" className="mt-8 flex flex-wrap items-center justify-center gap-4 lg:justify-start">
-                <Button asChild size="lg">
-                    <Link href="#contact">Get in Touch</Link>
-                </Button>
-                <Button asChild variant="outline" size="lg">
-                    <Link href="#projects">
-                        View Projects
-                        <ExternalLink className='ml-2' />
-                    </Link>
-                </Button>
-            </AnimatedDiv>
+            
                         <AnimatedDiv delay="0.4s" className="mt-8 grid grid-cols-1 sm:grid-cols-2 gap-3 sm:gap-4 w-full max-w-2xl">
                                 <a
                                     href="mailto:malihamehnazcse@gmail.com"

@@ -71,7 +71,7 @@ export const experiences = [
     companyDetail: "(Multinational IT Consulting & Staffing Company, USA HQ)",
     period: "Aug 2024 - Present",
     companyUrl: "https://dexian.com/locations/bangladesh/",
-    logo: "https://i.ibb.co/1tS4Mp0K/Dexian-Logo-1-1024x1024-png.webp",
+    logo: "/logos/dexian.png",
     description: "Leading a high-performing AI/ML and software development team focused on building next-generation digital solutions.",
     responsibilities: [
         "Engineered and deployed 10+ enterprise AI/ML solutions on Azure ML and Kubernetes, improving operational efficiency by 30% and reducing manual workloads by 12%.",
@@ -123,13 +123,15 @@ export const education = [
     degree: "Master of Information Technology",
     institution: "University of Dhaka",
     period: "2019–2021",
-    logo: "https://i.ibb.co/5y09P2W/Dhaka-University-logo-svg.png"
+    logo: "https://i.ibb.co/5y09P2W/Dhaka-University-logo-svg.png",
+    thesis: "Handwritten Text Recognition Using Machine Learning Algorithms"
   },
   {
     degree: "Bachelor of Science in Computer Science & Engineering",
     institution: "BRAC University",
     period: "2013–2018",
-    logo: "https://i.ibb.co/qLfMyH1d/BRAC-University-monogram-svg.png"
+    logo: "https://i.ibb.co/qLfMyH1d/BRAC-University-monogram-svg.png",
+    thesis: "Voice Signal–Based Gender Prediction Model Using Random Forest Classifier"
   }
 ];
 
@@ -138,6 +140,7 @@ export const projects = [
     title: "Walled Garden",
     description: "Empowers sales teams with guided technical knowledge and the right questions for meaningful client discussions, reducing dependency on solution engineers.",
     tags: ["AI", "Knowledge Systems", "Sales Enablement"],
+      assignment: ['All', 'Dexian'],
     githubUrl: "#",
     liveUrl: "#"
   },
@@ -145,6 +148,7 @@ export const projects = [
     title: "RoleplAI",
     description: "AI-driven simulation tool that enables users to practice real-life scenarios with feedback in a gamified environment.",
     tags: ["Generative AI", "NLP", "LLMs", "Simulation Frameworks"],
+      assignment: ['All', 'Dexian'],
     githubUrl: "#",
     liveUrl: "#"
   },
@@ -152,20 +156,15 @@ export const projects = [
     title: "Proposal Writer Assistant",
     description: "Automates proposal generation by leveraging a centralized repository of past responses to extract and rephrase relevant text.",
     tags: ["Generative AI", "LLMs", "RAG", "Document Intelligence"],
+      assignment: ['All', 'Dexian'],
     githubUrl: "#",
     liveUrl: "#"
   },
   {
-    title: "RFP Matcher (In Progress)",
+    title: "RFP Matcher ",
     description: "AI solution that extracts key details from RFPs and generates a structured response outline to accelerate bid preparation.",
-    tags: ["AI", "Document Processing", "Workflow Automation"],
-    githubUrl: "#",
-    liveUrl: "#"
-  },
-  {
-    title: "Foresight",
-    description: "Predictive AI that forecasts service tickets using historical data to optimize IT support operations.",
-    tags: ["Machine Learning", "Predictive Modeling", "Data Analytics", "Automation"],
+    tags: ["AlloyDB", "Document Processing"],
+      assignment: ['All', 'Dexian'],
     githubUrl: "#",
     liveUrl: "#"
   },
@@ -173,27 +172,16 @@ export const projects = [
     title: "Next Gen Call Center",
     description: "Performs real-time transcription and sentiment analysis of customer calls to trigger proactive management alerts.",
     tags: ["AI", "Speech AI", "Sentiment Analysis", "Real-time Processing"],
+      assignment: ['All', 'Dexian'],
     githubUrl: "#",
     liveUrl: "#"
   },
-  {
-    title: "Query Craft",
-    description: "Lets users query databases and Excel files in natural language, reducing dependency on developers for ad-hoc reports.",
-    tags: ["AI", "NLP", "Data Analytics", "Visualization"],
-    githubUrl: "#",
-    liveUrl: "#"
-  },
-  {
-    title: "Answer AI",
-    description: "Converts historical responses into a searchable knowledge base for compliance and customer service automation.",
-    tags: ["Generative AI", "RAG", "Knowledge Management", "LLMs"],
-    githubUrl: "#",
-    liveUrl: "#"
-  },
+
   {
     title: "Code Guard",
     description: "Scans repositories for vulnerabilities, secret leaks, and outdated dependencies; generates SBOM for improved compliance.",
     tags: ["DevSecOps", "SAST", "Software Compliance"],
+      assignment: ['All', 'Dexian'],
     githubUrl: "#",
     liveUrl: "#"
   },
@@ -201,20 +189,15 @@ export const projects = [
     title: "Geo Viz",
     description: "Visualizes GIS-based flight paths to ensure pipeline coverage and optimize drone inspections.",
     tags: ["Geospatial Analytics", "Visualization", "Automation"],
+      assignment: ['All', 'Dexian' ],
     githubUrl: "#",
     liveUrl: "#"
   },
   {
-    title: "BPMN Generator",
-    description: "Uses image recognition to generate BPMN workflow diagrams automatically from screenshots.",
-    tags: ["Vision AI", "Process Automation", "Workflow Modeling"],
-    githubUrl: "#",
-    liveUrl: "#"
-  },
-  {
-    title: "Agent Dexi (Customer Intelligence Report)",
+    title: "Agent Dexi",
     description: "Proprietary intelligent agent automating web data collection and analysis for accurate, timely company insights.",
     tags: ["Generative AI", "LLMs", "Web Scraping", "Data Analytics"],
+      assignment: ['All', 'Dexian'],
     githubUrl: "#",
     liveUrl: "#"
   },
@@ -222,20 +205,7 @@ export const projects = [
     title: "Comment Classifier",
     description: "Enables non-technical users to train text classification models on their own datasets easily.",
     tags: ["Machine Learning", "AutoML", "Text Classification", "Data Labeling"],
-    githubUrl: "#",
-    liveUrl: "#"
-  },
-  {
-    title: "ChatPath",
-    description: "Converts static decision-tree images into interactive, dynamic chatbot experiences.",
-    tags: ["Vision AI", "Decision Support", "Automation"],
-    githubUrl: "#",
-    liveUrl: "#"
-  },
-  {
-    title: "Speaking Notes",
-    description: "Generates slide-specific speaker notes from PowerPoint files using Azure Vision Studio.",
-    tags: ["OCR", "Presentation Automation", "AI Productivity"],
+      assignment: ['All', 'Dexian'],
     githubUrl: "#",
     liveUrl: "#"
   },
@@ -243,20 +213,7 @@ export const projects = [
     title: "ServiceNow Self-Help LLM",
     description: "Uses generative AI to automatically generate IT troubleshooting guides and empower self-service users.",
     tags: ["Generative AI", "LLM", "ITSM", "Self-Service AI"],
-    githubUrl: "#",
-    liveUrl: "#"
-  },
-  {
-    title: "D-Genie",
-    description: "Automates code refactoring and unit test generation using reflection and generative AI under a TDD framework.",
-    tags: ["Generative AI", "GenAI", "Software Quality", "DevOps"],
-    githubUrl: "#",
-    liveUrl: "#"
-  },
-  {
-    title: "Check List Assistant",
-    description: "Tracks conversation points and dynamically checks off meeting items in real-time using AI.",
-    tags: ["AI Assistants", "Productivity Tools", "Workflow Automation"],
+      assignment: ['All', 'Dexian'],
     githubUrl: "#",
     liveUrl: "#"
   },
@@ -264,13 +221,15 @@ export const projects = [
     title: "Scrum Snapshot",
     description: "Integrates with Azure Boards to automate project status summaries and email reporting.",
     tags: ["DevOps", "Automation", "Agile Reporting"],
+      assignment: ['All', 'Dexian'],
     githubUrl: "#",
     liveUrl: "#"
   },
   {
-    title: "Magic Match",
+    title: "ATS Compatibility",
     description: "Analyzes resumes and job descriptions to evaluate candidate-job fit with AI-driven scoring.",
     tags: ["HR Tech", "Semantic Search", "AI Matching"],
+      assignment: ['All', 'Github'],
     githubUrl: "#",
     liveUrl: "#"
   },
@@ -278,6 +237,7 @@ export const projects = [
     title: "Agentic Warehouse Assistant",
     description: "AI agents extract product data online and auto-update Excel inventory sheets, improving accuracy and logistics.",
     tags: ["Generative AI", "Agentic AI", "Data Automation", "Supply Chain"],
+      assignment: ['All', 'Dexian'],
     githubUrl: "#",
     liveUrl: "#"
   },
@@ -285,36 +245,31 @@ export const projects = [
     title: "Knowledge Engine",
     description: "AI-driven knowledge retrieval platform enabling fast, intelligent document search across large repositories.",
     tags: ["Generative AI", "RAG", "Knowledge Graphs", "Enterprise Search"],
+      assignment: ['All', 'Dexian'],
     githubUrl: "#",
     liveUrl: "#"
   },
   {
     title: "ReTurnVision",
     description: "Automates laptop return inspections using AI-based defect detection and classification.",
-    tags: ["Computer Vision", "QA Automation", "Predictive Analytics", "Machine Learning"],
+    tags: ["Computer Vision", "Predictive Analytics", "Machine Learning"],
+    assignment: ['All', 'Dexian'],
     githubUrl: "#",
     liveUrl: "#"
-  },
+  } 
+  ,
   {
-    title: "BizFlow",
-    description: "Generates BPMN diagrams and requirement docs from meeting transcripts and recordings for business analysts.",
-    tags: ["NLP", "Workflow Generation", "Automation"],
+    title: "Article Generation Pipeline",
+    description: "End-to-end RAG pipeline that selects high-quality sources, generates article drafts with citations, and supports inline editing for editorial control.",
+    tags: ["RAG", "NLP", "Article Generation", "LLMs", "Source Selection", "Editing UI"],
+    assignment: ['All', 'Github'],
     githubUrl: "#",
     liveUrl: "#"
-  },
-  {
-    title: "QATron",
-    description: "Transforms manual test cases into executable Selenium scripts using an AI-powered automation testing suite.",
-    tags: ["Generative AI", "Automation", "LLM", "Playwright", "Selenium"],
-    githubUrl: "#",
-    liveUrl: "https://qatron.azurewebsites.net"
   }
 ];
 
 export const companies = [
-  { name: 'Google', logo: 'https://i.ibb.co.com/68z44qz/google.png' },
-  { name: 'Microsoft', logo: 'https://i.ibb.co.com/pL1r5WJ/microsoft.png' },
-  { name: 'Meta', logo: 'https://i.ibb.co.com/3s7z0kC/meta.png' },
-  { name: 'Amazon', logo: 'https://i.ibb.co/C0hC7Gk/amazon.png' },
-  { name: 'Netflix', logo: 'https://i.ibb.co/k0g9tp3/netflix.png' },
+  { name: 'Dexian', logo: '/logos/dexian.png' },
+  { name: 'Nitol Motors', logo: '/logos/Nitol-Niloy logo.png' },
+  { name: 'Golden Harvest', logo: '/logos/golden-harvest.jpeg' },
 ];
