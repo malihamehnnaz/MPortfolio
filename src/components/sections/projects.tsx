@@ -51,6 +51,14 @@ export default function ProjectsSection() {
           ))}
         </AnimatedDiv>
         
+        {selectedCategory === 'Dexian' && (
+          <div className="mt-4 mb-6 text-center">
+            <p className="inline-block rounded-md px-3 py-1 text-sm text-muted-foreground bg-muted/5">
+              These projects are in Dexian's GitHub Enterprise.
+            </p>
+          </div>
+        )}
+
         <div className="mt-12 grid grid-cols-1 gap-6 sm:gap-8 md:grid-cols-2 lg:grid-cols-4">
           {filteredProjects.map((project, index) => (
             <ProjectCard project={project} index={index} key={project.title} />

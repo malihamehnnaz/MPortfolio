@@ -84,7 +84,7 @@ export default function Header() {
         </nav>
         <div className="flex items-center gap-4">
             <Button asChild variant="outline" className="hidden md:flex">
-                <a href="https://www.dropbox.com/scl/fi/0onvxbo0w25qqy4rgub6x/Maliha_Mehnaz_Professional_CV.docx?rlkey=jtjbf9ydb84s99xgs0pincn8h&dl=1" target="_blank" rel="noopener noreferrer">
+                <a href="/MALIHA-MEHNAZ-Resume.pdf" download="Maliha_Mehnaz_Resume.pdf">
                   <Download className="mr-2 h-4 w-4" />
                   Download Resume
                 </a>
@@ -120,12 +120,12 @@ export default function Header() {
                       <NavLinkItems isMobile />
                     </nav>
                     <div className='mt-auto'>
-                      <Button asChild className="mt-4 w-full">
-                          <a href="https://www.dropbox.com/scl/fi/0onvxbo0w25qqy4rgub6x/Maliha_Mehnaz_Professional_CV.docx?rlkey=jtjbf9ydb84s99xgs0pincn8h&dl=1" target="_blank" rel="noopener noreferrer" onClick={() => setMobileMenuOpen(false)}>
-                              <Download className="mr-2 h-4 w-4" />
-                              Download Resume
-                          </a>
-                      </Button>
+            <Button asChild className="mt-4 w-full">
+              <a href="/MALIHA-MEHNAZ-Resume.pdf" download="Maliha_Mehnaz_Resume.pdf" onClick={() => setMobileMenuOpen(false)}>
+                <Download className="mr-2 h-4 w-4" />
+                Download Resume
+              </a>
+            </Button>
                     </div>
                 </div>
                 </SheetContent>

@@ -74,12 +74,11 @@ export const experiences = [
     logo: "/logos/dexian.png",
     description: "Leading a high-performing AI/ML and software development team focused on building next-generation digital solutions.",
     responsibilities: [
-        "Engineered and deployed 10+ enterprise AI/ML solutions on Azure ML and Kubernetes, improving operational efficiency by 30% and reducing manual workloads by 12%.",
-        "Built and productionized LLM-based agentic systems using LangGraph, LangChain, and Azure OpenAI, improving decision accuracy by 15% and cutting turnaround time by 25%.",
-        "Simplified model deployment pipelines via Docker, GitHub Actions, and CI/CD, reducing release cycles from 2 weeks to 5 days and improving reliability by 40%.",
-        "Implemented retrieval-augmented generation (RAG) pipelines using vector databases, enhancing LLM response precision and increasing client adoption by 25%.",
-        "Established standardized MLOps governance with MLflow and monitoring dashboards, reducing rollback incidents by 30%.",
-    ],
+        "Architected and deployed 10+ enterprise-grade AI/ML solutions  using LangGraph, LangChain, and Azure OpenAI improving operational efficiency by 12% & reducing manual workloads.",
+        "Built standardized MLOps pipelines using Docker, MLflow, and CI/CD, reducing release cycles from 2 weeks to 5 days while improving deployment reliability.",
+        "Developed retrieval-augmented generation (RAG) architecture using vector databases, enhancing model precision and increasing client adoption rate.",
+        "Led a cross-functional team of 8 AI engineers and data scientists, driving best practices in experimentation, deployment, and architecture design.",
+      ],
     achievements: []
   },
   {
@@ -91,11 +90,10 @@ export const experiences = [
     logo: "https://i.ibb.co/3mXkWxTk/download.jpg",
     description: "Developed and deployed Python-based AI systems to automate business analytics and customer insights, including predictive maintenance and personalized recommendation engines.",
     responsibilities: [
-      "Built predictive maintenance models using Scikit-learn and XGBoost, reducing equipment downtime by 22% and saving ~$9,000 annually.",
-      "Improved customer segmentation accuracy by 28% through advanced feature engineering and model optimization.",
-      "Designed and maintained ETL workflows processing over 1M+ records, enhancing data integrity and training performance.",
-      "Developed Power BI dashboards for real-time analytics, cutting decision latency by 35%.",
-      "Mentored a 5-member AI team, improving code quality, sprint velocity, and ML best-practice adoption by 20%.",
+    "Built predictive models using Scikit-learn and XGBoost, saving ~$9,000 annually.",
+    "Improved customer segmentation accuracy by 28% through advanced feature engineering and model optimization.",
+    "Developed Power BI dashboards for real-time analytics, cutting decision latency by 35% in 2 projects.",
+    "Mentored a 5-member AI team, improving code quality, sprint velocity, and ML best-practice adoption by 20%.",
     ],
     achievements: []
   },
@@ -108,12 +106,10 @@ export const experiences = [
     logo: "https://i.ibb.co/4wzLmx2K/65ffda90d2372028bed532d6-Golden-Harvest.jpg",
     description: "Designed, developed, and deployed scalable software solutions for enterprise clients, primarily utilizing Python for backend services.",
     responsibilities: [
-        "Developed Python-based automation scripts and APIs that saved over 300 staff hours monthly through workflow optimization.",
-        "Created ML-powered analytics dashboards with Scikit-learn and Plotly, improving reporting efficiency by 18%.",
-        "Preprocessed and cleaned 500K+ structured and unstructured data points, improving model accuracy by 20%.",
-        "Collaborated with QA and product teams under Agile delivery cycles, achieving 100% on-time project completion.",
-        "Optimized backend logic, reducing server response time by 20% and improving API performance.",
-    ],
+"Developed Python-based automation scripts and APIs that saved over 300 staff hours monthly through workflow optimization.",
+"Created ML-powered analytics dashboards with Scikit-learn and Plotly, improving reporting efficiency by 18%.",
+"Preprocessed and cleaned 500K+ structured and unstructured data points.",
+"Optimized backend logic, reducing server response time by 20% and improving API performance.",    ],
     achievements: []
   }
 ];
@@ -262,6 +258,24 @@ export const projects = [
     title: "Article Generation Pipeline",
     description: "End-to-end RAG pipeline that selects high-quality sources, generates article drafts with citations, and supports inline editing for editorial control.",
     tags: ["RAG", "NLP", "Article Generation", "LLMs", "Source Selection", "Editing UI"],
+    assignment: ['All', 'Github'],
+    githubUrl: "#",
+    liveUrl: "#"
+  }
+  ,
+  {
+    title: "ChatDocs",
+    description: "Document assistant enabling semantic Q&A.",
+    tags: ["React", "FastAPI", "PostgreSQL", "LangChain", "LLM", "RAG"],
+    assignment: ['All', 'Github'],
+    githubUrl: "#",
+    liveUrl: "#"
+  }
+  ,
+  {
+    title: "AgentFlow",
+    description: "Natural language to pipeline automation tool for MLOps deployment.",
+    tags: ["LangGraph", "Azure AI Foundry", "Docker", "GitHub Actions"],
     assignment: ['All', 'Github'],
     githubUrl: "#",
     liveUrl: "#"

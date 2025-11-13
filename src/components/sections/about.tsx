@@ -30,13 +30,13 @@ export default function AboutSection() {
             <div className="md:col-span-3">
                  <AnimatedDiv delay="0.1s">
                     <p className="text-sm text-muted-foreground text-left mb-4">
-                        AI/ML Engineer with 6+ years of experience designing, training, and deploying scalable machine learning and generative AI solutions on Azure. 
+                        AI Solutions Architect with 6+ years of experience designing, deploying, and scaling production-grade AI/ML and generative systems on Azure.
                     </p>
                     <p className="text-sm text-muted-foreground text-left mb-4">
-                        Delivered production-grade models that cut deployment time by 60%, improved accuracy by 28%, and reduced cloud costs by 18%. 
+                       Proven record of improving enterprise efficiency and reducing cloud costs through optimized MLOps, LLM-based automation, and strategic AI adoption. 
                     </p>
                     <p className="text-sm text-muted-foreground text-left">
-                        Skilled in Python, PyTorch, Gen AI, and MLOps with a track record of translating complex data into actionable, high-impact insights at enterprise scale.
+                        Experienced in building retrieval-augmented and agentic AI pipelines that transform data into measurable business outcomes.
                     </p>
                 </AnimatedDiv>
             </div>
