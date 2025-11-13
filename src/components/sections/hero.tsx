@@ -33,7 +33,7 @@ export default function HeroSection() {
           </AnimatedDiv>
           <div className="flex flex-col items-center text-center lg:items-start lg:text-left">
             <AnimatedDiv>
-                <h1 className="text-4xl font-extrabold tracking-tight text-foreground sm:text-5xl md:text-6xl">
+                <h1 className="text-xl font-extrabold tracking-tight text-foreground sm:text-2xl md:text-3xl">
                     Maliha Mehnaz
                 </h1>
             </AnimatedDiv>

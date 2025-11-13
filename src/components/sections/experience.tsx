@@ -12,7 +12,7 @@ export default function ExperienceSection() {
       <div className="container mx-auto max-w-6xl px-4 lg:px-8">
         {/* Header (aligned with other sections) */}
         <AnimatedDiv className="flex flex-col items-center text-center mb-12">
-          <h2 className="text-3xl font-bold tracking-tight sm:text-4xl section-header">Experience</h2>
+          <h2 className="text-xl font-bold tracking-tight sm:text-2xl section-header">Experience</h2>
           <p className="mt-3 text-lg text-muted-foreground max-w-2xl">
             Crafting intelligent solutions across industry-leading organizations
           </p>
@@ -50,7 +50,7 @@ export default function ExperienceSection() {
                           {/* Title & Period */}
                           <div className="flex flex-col sm:flex-row sm:items-start sm:justify-between gap-4 mb-3">
                             <div>
-                              <h3 className="text-2xl md:text-3xl font-bold text-foreground mb-2">
+                              <h3 className="text-lg md:text-xl font-bold text-foreground mb-2">
                                 {exp.role}
                               </h3>
                               <p className="text-lg text-primary font-semibold group-hover:text-primary/90 transition-colors">

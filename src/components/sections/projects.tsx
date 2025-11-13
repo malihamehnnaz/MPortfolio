@@ -29,7 +29,7 @@ export default function ProjectsSection() {
   <section id="projects" className="w-full py-8 md:py-12">
       <div className="container mx-auto max-w-7xl px-4 lg:px-8">
         <AnimatedDiv className="flex flex-col items-center text-center">
-          <h2 className="text-3xl font-bold tracking-tight sm:text-4xl">My Recent Work</h2>
+          <h2 className="text-lg font-bold tracking-tight sm:text-xl">My Recent Work</h2>
         </AnimatedDiv>
 
         <AnimatedDiv delay="0.1s" className="mt-8 mb-12 flex flex-wrap justify-center gap-2">
