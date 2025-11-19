@@ -23,7 +23,7 @@ export default function AboutSection() {
     <section id="about" className="w-full py-8 md:py-12">
       <div className="container mx-auto max-w-5xl px-4 lg:px-8">
         <AnimatedDiv className="flex flex-col items-center text-center mb-12">
-            <h2 className="text-3xl font-bold tracking-tight sm:text-4xl section-header">About Me</h2>
+            <h2 className="section-header">About Me</h2>
         </AnimatedDiv>
 
         <div className="grid grid-cols-1 md:grid-cols-5 gap-8 lg:gap-12">

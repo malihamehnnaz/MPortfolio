@@ -12,7 +12,7 @@ export default function ExperienceSection() {
       <div className="container mx-auto max-w-6xl px-4 lg:px-8">
         {/* Header (aligned with other sections) */}
         <AnimatedDiv className="flex flex-col items-center text-center mb-12">
-          <h2 className="text-xl font-bold tracking-tight sm:text-2xl section-header">Experience</h2>
+          <h2 className="section-header">Experience</h2>
           <p className="mt-3 text-lg text-muted-foreground max-w-2xl">
             Crafting intelligent solutions across industry-leading organizations
           </p>

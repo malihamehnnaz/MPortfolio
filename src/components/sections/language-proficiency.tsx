@@ -34,9 +34,8 @@ export default function LanguageProficiencySection() {
   <section id="language-proficiency" className="w-full py-8 md:py-12">
       <div className="container mx-auto max-w-4xl px-4 lg:px-8">
         <AnimatedDiv className="flex flex-col items-center text-center mb-12">
-          <h2 className="text-lg font-bold tracking-tight sm:text-xl section-header">Language Proficiency</h2>
-          <p className="mt-3 text-lg text-muted-foreground max-w-2xl">Scores for major English proficiency tests.</p>
-        </AnimatedDiv>
+          <h2 className="section-header">Language Proficiency</h2>
+              </AnimatedDiv>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
           {items.map((test) => (

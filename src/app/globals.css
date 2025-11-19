@@ -169,6 +169,7 @@
 }
 
 .section-header {
+  @apply text-xl font-bold tracking-tight sm:text-2xl;
   position: relative;
   display: inline-block;
 }

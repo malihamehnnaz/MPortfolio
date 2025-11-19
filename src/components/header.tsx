@@ -13,7 +13,9 @@ const navLinks = [
   { href: '#about', label: 'About' },
   { href: '#experience', label: 'Experience' },
   { href: '#projects', label: 'Projects' },
+  { href: '#education', label: 'Education' },
   { href: '#skills', label: 'Skills' },
+  { href: '#language-proficiency', label: 'Language' },
   { href: '#contact', label: 'Contact' },
 ];
 
@@ -31,10 +33,22 @@ export default function Header() {
       if (document.querySelector('#home') && window.scrollY < (document.querySelector('#home') as HTMLElement).offsetHeight) {
         currentSection = '#home';
       } else {
-        for (const section of sections) {
-          if (section && (section as HTMLElement).offsetTop <= window.scrollY + 100) {
-            currentSection = `#${section.id}`;
+        // Find the section whose top is closest to the top of the viewport (but not below it)
+        let bestIndex = -1;
+        let bestTop = -Infinity;
+        const threshold = 150; // px from top
+        for (let i = 0; i < sections.length; i++) {
+          const section = sections[i] as HTMLElement | null;
+          if (!section) continue;
+          const rectTop = section.getBoundingClientRect().top;
+          // rectTop is distance from viewport top; prefer the largest rectTop <= threshold
+          if (rectTop <= threshold && rectTop > bestTop) {
+            bestTop = rectTop;
+            bestIndex = i;
           }
+        }
+        if (bestIndex !== -1) {
+          currentSection = navLinks[bestIndex].href;
         }
       }
       setActiveLink(currentSection);
@@ -52,6 +66,8 @@ export default function Header() {
           key={link.href}
           href={link.href}
           onClick={() => {
+            // Ensure the clicked link becomes active immediately
+            setActiveLink(link.href);
             if (isMobile) setMobileMenuOpen(false);
           }}
           className={cn(

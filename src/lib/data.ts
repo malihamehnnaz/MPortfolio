@@ -135,7 +135,7 @@ export const projects = [
   {
     title: "RoleplAI",
     description: "AI-driven simulation tool that enables users to practice real-life scenarios with feedback in a gamified environment.",
-    tags: ["Generative AI", "NLP", "LLMs", "Simulation Frameworks"],
+    tags: ["Gene AI", "NLP", "Simulation Frameworks"],
       assignment: ['All', 'Dexian'],
     githubUrl: "#",
     liveUrl: "#"
@@ -160,7 +160,7 @@ export const projects = [
   {
     title: "Agent Dexi",
     description: "Proprietary intelligent agent automating web data collection and analysis for accurate, timely company insights.",
-    tags: ["Generative AI", "LLMs", "Web Scraping", "Data Analytics"],
+    tags: ["Gen AI", "Web Scraping", "Data Analytics"],
       assignment: ['All', 'Dexian'],
     githubUrl: "#",
     liveUrl: "#"
@@ -168,7 +168,7 @@ export const projects = [
   {
     title: "Comment Classifier",
     description: "Enables non-technical users to train text classification models on their own datasets easily.",
-    tags: ["Machine Learning", "AutoML", "Text Classification", "Data Labeling"],
+    tags: ["Machine Learning", "Data Labeling"],
       assignment: ['All', 'Dexian'],
     githubUrl: "#",
     liveUrl: "#"
@@ -176,7 +176,7 @@ export const projects = [
   {
     title: "ServiceNow Self-Help LLM",
     description: "Uses generative AI to automatically generate IT troubleshooting guides and empower self-service users.",
-    tags: ["Generative AI", "LLM", "ITSM", "Self-Service AI"],
+    tags: ["Generative AI", "ITSM", "Self-Service AI"],
       assignment: ['All', 'Dexian'],
     githubUrl: "#",
     liveUrl: "#"
@@ -192,7 +192,7 @@ export const projects = [
   {
     title: "Knowledge Engine",
     description: "AI-driven knowledge retrieval platform enabling fast, intelligent document search across large repositories.",
-    tags: ["Generative AI", "RAG", "Knowledge Graphs", "Enterprise Search"],
+    tags: ["RAG", "Knowledge Graphs", "Enterprise Search"],
       assignment: ['All', 'Dexian'],
     githubUrl: "#",
     liveUrl: "#"
@@ -209,7 +209,7 @@ export const projects = [
   {
     title: "Article Generation Pipeline",
     description: "End-to-end RAG pipeline that selects high-quality sources, generates article drafts with citations, and supports inline editing for editorial control.",
-    tags: ["RAG", "NLP", "Article Generation", "LLMs", "Source Selection", "Editing UI"],
+    tags: ["RAG", "Article Generation", "Source Selection"],
     assignment: ['All', 'Github'],
     githubUrl: "#",
     liveUrl: "#"
@@ -226,7 +226,7 @@ export const projects = [
   {
     title: "AgentFlow",
     description: "Natural language to pipeline automation tool for MLOps deployment.",
-    tags: ["LangGraph", "Azure AI Foundry", "Docker", "GitHub Actions"],
+    tags: ["LangGraph", "Azure AI Foundry", "GitHub Actions"],
     assignment: ['All', 'Github'],
     githubUrl: "#",
     liveUrl: "#"
