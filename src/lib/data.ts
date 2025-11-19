@@ -70,7 +70,7 @@ export const experiences = [
     company: "Dexian Bangladesh",
     companyDetail: "(Multinational IT Consulting & Staffing Company, USA HQ)",
     period: "Aug 2024 - Present",
-    companyUrl: "https://dexian.com/locations/bangladesh/",
+    companyUrl: "https://dexian.com/",
     logo: "/logos/dexian.png",
     description: "Leading a high-performing AI/ML and software development team focused on building next-generation digital solutions.",
     responsibilities: [
@@ -133,25 +133,9 @@ export const education = [
 
 export const projects = [
   {
-    title: "Walled Garden",
-    description: "Empowers sales teams with guided technical knowledge and the right questions for meaningful client discussions, reducing dependency on solution engineers.",
-    tags: ["AI", "Knowledge Systems", "Sales Enablement"],
-      assignment: ['All', 'Dexian'],
-    githubUrl: "#",
-    liveUrl: "#"
-  },
-  {
     title: "RoleplAI",
     description: "AI-driven simulation tool that enables users to practice real-life scenarios with feedback in a gamified environment.",
     tags: ["Generative AI", "NLP", "LLMs", "Simulation Frameworks"],
-      assignment: ['All', 'Dexian'],
-    githubUrl: "#",
-    liveUrl: "#"
-  },
-  {
-    title: "Proposal Writer Assistant",
-    description: "Automates proposal generation by leveraging a centralized repository of past responses to extract and rephrase relevant text.",
-    tags: ["Generative AI", "LLMs", "RAG", "Document Intelligence"],
       assignment: ['All', 'Dexian'],
     githubUrl: "#",
     liveUrl: "#"
@@ -164,23 +148,7 @@ export const projects = [
     githubUrl: "#",
     liveUrl: "#"
   },
-  {
-    title: "Next Gen Call Center",
-    description: "Performs real-time transcription and sentiment analysis of customer calls to trigger proactive management alerts.",
-    tags: ["AI", "Speech AI", "Sentiment Analysis", "Real-time Processing"],
-      assignment: ['All', 'Dexian'],
-    githubUrl: "#",
-    liveUrl: "#"
-  },
 
-  {
-    title: "Code Guard",
-    description: "Scans repositories for vulnerabilities, secret leaks, and outdated dependencies; generates SBOM for improved compliance.",
-    tags: ["DevSecOps", "SAST", "Software Compliance"],
-      assignment: ['All', 'Dexian'],
-    githubUrl: "#",
-    liveUrl: "#"
-  },
   {
     title: "Geo Viz",
     description: "Visualizes GIS-based flight paths to ensure pipeline coverage and optimize drone inspections.",
@@ -214,26 +182,10 @@ export const projects = [
     liveUrl: "#"
   },
   {
-    title: "Scrum Snapshot",
-    description: "Integrates with Azure Boards to automate project status summaries and email reporting.",
-    tags: ["DevOps", "Automation", "Agile Reporting"],
-      assignment: ['All', 'Dexian'],
-    githubUrl: "#",
-    liveUrl: "#"
-  },
-  {
     title: "ATS Compatibility",
     description: "Analyzes resumes and job descriptions to evaluate candidate-job fit with AI-driven scoring.",
     tags: ["HR Tech", "Semantic Search", "AI Matching"],
       assignment: ['All', 'Github'],
-    githubUrl: "#",
-    liveUrl: "#"
-  },
-  {
-    title: "Agentic Warehouse Assistant",
-    description: "AI agents extract product data online and auto-update Excel inventory sheets, improving accuracy and logistics.",
-    tags: ["Generative AI", "Agentic AI", "Data Automation", "Supply Chain"],
-      assignment: ['All', 'Dexian'],
     githubUrl: "#",
     liveUrl: "#"
   },
@@ -270,8 +222,7 @@ export const projects = [
     assignment: ['All', 'Github'],
     githubUrl: "#",
     liveUrl: "#"
-  }
-  ,
+  },
   {
     title: "AgentFlow",
     description: "Natural language to pipeline automation tool for MLOps deployment.",

@@ -1,6 +1,7 @@
 
 "use client";
 
+import React, { useState } from "react";
 import { useForm } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
 import { z } from "zod";
@@ -20,6 +21,7 @@ const formSchema = z.object({
 
 export function ContactForm() {
   const { toast } = useToast();
+  const [loading, setLoading] = useState(false);
   const form = useForm<z.infer<typeof formSchema>>({
     resolver: zodResolver(formSchema),
     defaultValues: {
@@ -30,12 +32,39 @@ export function ContactForm() {
   });
 
   function onSubmit(values: z.infer<typeof formSchema>) {
-    console.log(values);
-    toast({
-      title: "Message Sent!",
-      description: "Thanks for reaching out. I'll get back to you shortly.",
-    });
-    form.reset();
+  // send to backend API. Use Render backend by default, allow overriding with NEXT_PUBLIC_EMAIL_API_URL
+  const apiBase = process.env.NEXT_PUBLIC_EMAIL_API_URL ?? "https://portfolio-backend-nzd7.onrender.com";
+    setLoading(true);
+    fetch(`${apiBase}/send`, {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify(values),
+    })
+      .then(async (res) => {
+        const json = await res.json().catch(() => ({}));
+        if (res.ok) {
+          toast({
+            title: "Message Sent!",
+            description: json?.message ?? "Thanks for reaching out. I'll get back to you shortly.",
+          });
+          form.reset();
+        } else {
+          toast({
+            title: "Failed to send",
+            description: json?.detail ?? json?.message ?? "There was an error sending your message.",
+            variant: "destructive",
+          });
+        }
+      })
+      .catch((err) => {
+        console.error(err);
+        toast({
+          title: "Network error",
+          description: "Could not reach the email service. Try again later.",
+          variant: "destructive",
+        });
+      })
+      .finally(() => setLoading(false));
   }
 
   return (
@@ -82,9 +111,9 @@ export function ContactForm() {
                 </FormItem>
               )}
             />
-            <Button type="submit" className="w-full">
+            <Button type="submit" className="w-full" disabled={loading}>
               <Send className="mr-2 h-4 w-4" />
-              Send Message
+              {loading ? "Sending…" : "Send Message"}
             </Button>
           </form>
         </Form>
