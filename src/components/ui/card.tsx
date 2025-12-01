@@ -10,12 +10,12 @@ const Card = React.forwardRef<
     ref={ref}
     className={cn(
       // base card, with a stronger dark-mode glow + hover animation
-      "rounded-lg border bg-card text-card-foreground shadow-sm dark:border-neutral-700",
+      "rounded-lg border bg-card text-card-foreground shadow-sm dark:border-purple-500/30",
       // intensified static glow in dark mode
-      "dark:ring-1 dark:ring-primary/20 dark:shadow-[0_10px_40px_rgba(139,92,246,0.18)]",
+      "dark:ring-1 dark:ring-primary/30 dark:shadow-[0_10px_50px_rgba(139,92,246,0.25),0_0_80px_rgba(236,72,153,0.08)]",
       // hover: stronger ring, bigger glow and subtle lift
-  "transition-shadow transform duration-200 ease-out hover:-translate-y-1",
-  "dark:hover:ring-2 dark:hover:ring-primary/25 dark:hover:shadow-[0_16px_60px_rgba(139,92,246,0.25)]",
+  "transition-all transform duration-300 ease-out hover:-translate-y-1",
+  "dark:hover:ring-2 dark:hover:ring-primary/40 dark:hover:shadow-[0_20px_70px_rgba(139,92,246,0.35),0_0_100px_rgba(236,72,153,0.15)]",
       className
     )}
     {...props}

@@ -38,7 +38,7 @@ export default function HeroSection() {
                 </h1>
             </AnimatedDiv>
             <AnimatedDiv delay="0.1s">
-                <p className="mt-3 text-2xl font-semibold bg-gradient-to-r from-purple-500 to-blue-500 bg-clip-text text-transparent">
+                <p className="mt-3 text-2xl font-semibold bg-gradient-to-r from-purple-500 to-blue-500 bg-clip-text text-transparent dark:from-purple-400 dark:to-pink-400 dark:drop-shadow-[0_0_15px_rgba(139,92,246,0.5)]">
                     Innovation Team Manager
                 </p>
             </AnimatedDiv>
@@ -52,10 +52,10 @@ export default function HeroSection() {
                                 <a
                                     href="mailto:malihamehnazcse@gmail.com"
                                     aria-label="Send email to malihamehnazcse@gmail.com"
-                                    className="group flex w-full h-full min-h-[96px] flex-col items-center justify-center gap-1 p-4 rounded-xl bg-secondary hover:bg-primary/10 border border-border transition-all"
+                                    className="group flex w-full h-full min-h-[96px] flex-col items-center justify-center gap-1 p-4 rounded-xl bg-secondary hover:bg-primary/10 border border-border dark:border-primary/30 transition-all dark:hover:shadow-[0_0_20px_rgba(139,92,246,0.3)]"
                                 >
                                     <div className="flex items-center gap-2">
-                                        <Mail className="h-5 w-5 md:h-6 md:w-6 text-primary" />
+                                        <Mail className="h-5 w-5 md:h-6 md:w-6 text-primary dark:drop-shadow-[0_0_8px_rgba(139,92,246,0.6)]" />
                                         <span className="font-semibold text-sm">Email</span>
                                     </div>
                                                         <p
@@ -69,10 +69,10 @@ export default function HeroSection() {
                                 <a
                                     href="tel:+8801755839248"
                                     aria-label="Call phone number +880 1755839248"
-                                    className="group flex w-full h-full min-h-[96px] flex-col items-center justify-center gap-1 p-4 rounded-xl bg-secondary hover:bg-primary/10 border border-border transition-all"
+                                    className="group flex w-full h-full min-h-[96px] flex-col items-center justify-center gap-1 p-4 rounded-xl bg-secondary hover:bg-primary/10 border border-border dark:border-primary/30 transition-all dark:hover:shadow-[0_0_20px_rgba(139,92,246,0.3)]"
                                 >
                                     <div className="flex items-center gap-2">
-                                        <Phone className="h-5 w-5 md:h-6 md:w-6 text-primary" />
+                                        <Phone className="h-5 w-5 md:h-6 md:w-6 text-primary dark:drop-shadow-[0_0_8px_rgba(139,92,246,0.6)]" />
                                         <span className="font-semibold text-sm">Phone</span>
                                     </div>
                                                         <p
@@ -88,10 +88,10 @@ export default function HeroSection() {
                                     target="_blank"
                                     rel="noopener noreferrer"
                                     aria-label="Open GitHub profile"
-                                    className="group flex w-full h-full min-h-[96px] flex-col items-center justify-center gap-1 p-4 rounded-xl bg-secondary hover:bg-primary/10 border border-border transition-all"
+                                    className="group flex w-full h-full min-h-[96px] flex-col items-center justify-center gap-1 p-4 rounded-xl bg-secondary hover:bg-primary/10 border border-border dark:border-primary/30 transition-all dark:hover:shadow-[0_0_20px_rgba(139,92,246,0.3)]"
                                 >
                                     <div className="flex items-center gap-2">
-                                        <Github className="h-5 w-5 md:h-6 md:w-6 text-primary" />
+                                        <Github className="h-5 w-5 md:h-6 md:w-6 text-primary dark:drop-shadow-[0_0_8px_rgba(139,92,246,0.6)]" />
                                         <span className="font-semibold text-sm">GitHub</span>
                                     </div>
                                                         <p
@@ -107,10 +107,10 @@ export default function HeroSection() {
                                     target="_blank"
                                     rel="noopener noreferrer"
                                     aria-label="Open LinkedIn profile"
-                                    className="group flex w-full h-full min-h-[96px] flex-col items-center justify-center gap-1 p-4 rounded-xl bg-secondary hover:bg-primary/10 border border-border transition-all"
+                                    className="group flex w-full h-full min-h-[96px] flex-col items-center justify-center gap-1 p-4 rounded-xl bg-secondary hover:bg-primary/10 border border-border dark:border-primary/30 transition-all dark:hover:shadow-[0_0_20px_rgba(139,92,246,0.3)]"
                                 >
                                     <div className="flex items-center gap-2">
-                                        <Linkedin className="h-5 w-5 md:h-6 md:w-6 text-primary" />
+                                        <Linkedin className="h-5 w-5 md:h-6 md:w-6 text-primary dark:drop-shadow-[0_0_8px_rgba(139,92,246,0.6)]" />
                                         <span className="font-semibold text-sm">LinkedIn</span>
                                     </div>
                                                         <p

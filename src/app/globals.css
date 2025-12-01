@@ -27,25 +27,25 @@
   }
 
   .dark {
-    --background: 240 10% 4%;
+    --background: 240 15% 6%;
     --foreground: 0 0% 98%;
-    --card: 240 10% 4%;
+    --card: 240 12% 8%;
     --card-foreground: 0 0% 98%;
-    --popover: 240 10% 4%;
+    --popover: 240 12% 8%;
     --popover-foreground: 0 0% 98%;
-    --primary: 262.1 83.3% 57.8%;
-    --primary-foreground: 0 0% 98%;
-    --secondary: 240 3.7% 15.9%;
+    --primary: 270 85% 65%;
+    --primary-foreground: 0 0% 100%;
+    --secondary: 260 20% 20%;
     --secondary-foreground: 0 0% 98%;
-    --muted: 240 3.7% 15.9%;
-    --muted-foreground: 240 5% 64.9%;
-    --accent: 240 3.7% 15.9%;
-    --accent-foreground: 0 0% 98%;
-    --destructive: 0 62.8% 30.6%;
+    --muted: 260 15% 18%;
+    --muted-foreground: 240 10% 70%;
+    --accent: 280 60% 50%;
+    --accent-foreground: 0 0% 100%;
+    --destructive: 0 80% 60%;
     --destructive-foreground: 0 0% 98%;
-    --border: 240 3.7% 15.9%;
-    --input: 240 3.7% 15.9%;
-    --ring: 262.1 83.3% 57.8%;
+    --border: 260 30% 22%;
+    --input: 260 25% 20%;
+    --ring: 270 85% 65%;
   }
 }
 
@@ -54,7 +54,7 @@
     @apply border-border;
   }
   html {
-    font-size: 18px;
+    font-size: 16px;
     @apply scroll-smooth;
   }
   body {
@@ -184,8 +184,32 @@
   height: 3px;
   background: linear-gradient(to right, hsl(var(--primary)), #8b5cf6, #ec4899);
   transition: width 0.3s ease-in-out;
+  box-shadow: 0 0 12px rgba(139, 92, 246, 0.6);
 }
 
 .section-header:hover::after {
   width: 100%;
+}
+
+.dark .section-header {
+  text-shadow: 0 0 20px rgba(139, 92, 246, 0.4);
+}
+
+/* Vibrant glow utilities for dark mode */
+@layer utilities {
+  .dark .glow-text {
+    text-shadow: 0 0 20px rgba(139, 92, 246, 0.5), 0 0 40px rgba(139, 92, 246, 0.2);
+  }
+  
+  .dark .glow-border {
+    box-shadow: 0 0 20px rgba(139, 92, 246, 0.3), inset 0 0 20px rgba(139, 92, 246, 0.1);
+  }
+  
+  .dark .glow-primary {
+    box-shadow: 0 0 30px rgba(139, 92, 246, 0.4), 0 0 60px rgba(236, 72, 153, 0.2);
+  }
+  
+  .dark .hover\:glow-primary:hover {
+    box-shadow: 0 0 40px rgba(139, 92, 246, 0.6), 0 0 80px rgba(236, 72, 153, 0.3);
+  }
 }

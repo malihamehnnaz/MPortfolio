@@ -47,9 +47,8 @@ export default function SkillsSection() {
             <AnimatedDiv key={category.name} delay={`${idx * 80}ms`}>
               <Card className="group h-full shadow-sm rounded-xl transition-shadow duration-200 hover:shadow-md">
                 <CardContent className="p-4 border-l-4 border-primary/30 dark:border-primary/40"> 
-                  <div className="flex items-center justify-between mb-3">
+                  <div className="mb-3">
                     <h3 className="text-lg font-semibold">{category.name}</h3>
-                    <div className="text-sm text-muted-foreground">{skills.filter(s => s.category === category.name).length}</div>
                   </div>
 
                   <div className="mt-2 grid grid-cols-1 sm:grid-cols-2 gap-2">
@@ -60,9 +59,9 @@ export default function SkillsSection() {
                         return (
                           <div
                             key={skill.name}
-                            className="inline-flex items-center gap-3 px-3 py-1 rounded-full bg-muted/10 dark:bg-card/40 text-sm text-foreground/90 hover:bg-primary/5 hover:shadow-sm hover:translate-y-0.5 transition duration-150 cursor-pointer"
+                            className="inline-flex items-center gap-3 px-3 py-1 rounded-full bg-muted/10 dark:bg-card/40 text-sm text-foreground/90 hover:bg-primary/5 dark:hover:bg-primary/10 hover:shadow-sm dark:hover:shadow-[0_0_15px_rgba(139,92,246,0.3)] hover:translate-y-0.5 transition-all duration-200 cursor-pointer dark:border dark:border-primary/20"
                           >
-                            <span className="flex-shrink-0 w-2 h-2 rounded-full bg-primary" />
+                            <span className="flex-shrink-0 w-2 h-2 rounded-full bg-primary dark:shadow-[0_0_8px_rgba(139,92,246,0.6)]" />
                             <span className="leading-tight">{skill.name}</span>
                           </div>
                         );

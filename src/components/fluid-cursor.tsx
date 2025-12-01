@@ -5,14 +5,8 @@ import { useEffect, useRef, useState } from 'react';
 
 export default function FluidCursor() {
   const canvasRef = useRef<HTMLCanvasElement>(null);
-  const [isMobile, setIsMobile] = useState(false);
 
   useEffect(() => {
-    // Check if running on the client and not a mobile-sized screen.
-    const mobileCheck = window.innerWidth < 768;
-    setIsMobile(mobileCheck);
-    if (mobileCheck) return;
-
     const canvas = canvasRef.current;
     if (!canvas) return;
 
@@ -20,21 +14,24 @@ export default function FluidCursor() {
     const initFluid = () => {
         resizeCanvas();
 
+        // Check if device is mobile for performance optimization
+        const isMobileDevice = /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) || window.innerWidth < 768;
+
         let config = {
-            SIM_RESOLUTION: 128,
-            DYE_RESOLUTION: 1024,
+            SIM_RESOLUTION: isMobileDevice ? 64 : 128,
+            DYE_RESOLUTION: isMobileDevice ? 512 : 1024,
             CAPTURE_RESOLUTION: 512,
             // Increase dissipation so dye/velocity fade faster (smaller, shorter waves)
-            DENSITY_DISSIPATION: 1.25,
-            VELOCITY_DISSIPATION: 0.35,
+            DENSITY_DISSIPATION: isMobileDevice ? 1.5 : 1.25,
+            VELOCITY_DISSIPATION: isMobileDevice ? 0.5 : 0.35,
             PRESSURE: 0.8,
-            PRESSURE_ITERATIONS: 20,
+            PRESSURE_ITERATIONS: isMobileDevice ? 15 : 20,
             // Lower curl to reduce turbulence and "wavy" swirls
-            CURL: 6,
+            CURL: isMobileDevice ? 4 : 6,
             // Smaller radius and weaker force = tighter, smaller splats
             SPLAT_RADIUS: 0.14,
-            SPLAT_FORCE: 2800,
-            SHADING: true,
+            SPLAT_FORCE: isMobileDevice ? 2000 : 2800,
+            SHADING: !isMobileDevice,
             COLORFUL: true,
             COLOR_UPDATE_SPEED: 10,
             PAUSED: false,
@@ -932,10 +929,6 @@ export default function FluidCursor() {
       }
     }
   }, []);
-
-  if (isMobile) {
-    return null;
-  }
 
   return <canvas id="fluid-canvas" ref={canvasRef} />;
 }

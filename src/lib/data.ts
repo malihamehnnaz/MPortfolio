@@ -18,18 +18,18 @@ export const skills = [
   { name: "Scikit-learn", category: "Programming & Frameworks" },
   { name: "OpenCV", category: "Programming & Frameworks" },
   { name: "Flask/FastAPI", category: "Programming & Frameworks" },
-  { name: "React", category: "Programming & Frameworks" },
+  { name: "React/Typescript", category: "Programming & Frameworks" },
   { name: "JavaScript", category: "Programming & Frameworks" },
   
   // Data Science & Analytics
   { name: "Data Analysis", category: "Data Science & Analytics" },
   { name: "Pandas & NumPy", category: "Data Science & Analytics" },
-  { name: "Vector DB", category: "Data Science & Analytics" },
+  { name: "Vector DB/Faiss/Chroma", category: "Data Science & Analytics" },
   { name: "Statistical Analysis", category: "Data Science & Analytics" },
   { name: "SQL", category: "Data Science & Analytics" },
-  { name: "Grapg DB", category: "Data Science & Analytics" },
+  { name: "Graph DB", category: "Data Science & Analytics" },
   { name: "Matplotlib/Seaborn", category: "Data Science & Analytics" },
-  { name: "Data Preprocessing", category: "Data Science & Analytics" },
+  { name: "PostgreSQL/MongoDB", category: "Data Science & Analytics" },
 
   // MLOps & Integration
   { name: "Model Deployment", category: "MLOps & Integration" },
@@ -37,9 +37,9 @@ export const skills = [
   { name: "Web Service", category: "MLOps & Integration" },
   { name: "CI/CD Pipelines", category: "MLOps & Integration" },
   { name: "Model Monitoring", category: "MLOps & Integration" },
-  { name: "Docker", category: "MLOps & Integration", logoUrl: "https://iili.io/KjVscWF.md.png" },
+  { name: "Docker/Kubernetes", category: "MLOps & Integration", logoUrl: "https://iili.io/KjVscWF.md.png" },
   { name: "Git/GitHub", category: "MLOps & Integration" },
-  { name: "Cloud Platforms", category: "MLOps & Integration" },
+  { name: "Cloud - Azure/AWS", category: "MLOps & Integration" },
   
   // Old skills to be filtered out if not in new categories
   { name: "JavaScript", category: "Language and Database", logoUrl: "https://i.ibb.co/QFpQZJxx/images.jpg" },

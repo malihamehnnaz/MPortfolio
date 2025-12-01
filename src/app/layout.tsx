@@ -34,7 +34,7 @@ export default function RootLayout({
           storageKey='theme'
         >
           <FluidCursor />
-          <div className="absolute inset-0 top-0 z-0 h-full w-full bg-white bg-[radial-gradient(ellipse_80%_50%_at_50%_-20%,rgba(192,132,252,0.2),rgba(255,255,255,0))] dark:bg-black dark:bg-[radial-gradient(ellipse_80%_50%_at_50%_-20%,rgba(120,119,198,0.3),rgba(255,255,255,0))]"></div>
+          <div className="absolute inset-0 top-0 z-0 h-full w-full bg-white bg-[radial-gradient(ellipse_80%_50%_at_50%_-20%,rgba(192,132,252,0.2),rgba(255,255,255,0))] dark:bg-[radial-gradient(ellipse_120%_120%_at_50%_-10%,rgba(139,92,246,0.15),transparent_50%),radial-gradient(circle_at_80%_80%,rgba(236,72,153,0.12),transparent_60%),radial-gradient(circle_at_20%_60%,rgba(124,58,237,0.1),transparent_50%)] dark:bg-[#0a0a0f]"></div>
           {children}
           <Toaster />
         </ThemeProviderWrapper>
