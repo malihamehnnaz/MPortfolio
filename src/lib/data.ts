@@ -5,11 +5,13 @@ export const skills = [
   { name: "Machine Learning", category: "AI & Machine Learning" },
   { name: "Deep Learning", category: "AI & Machine Learning" },
   { name: "Neural Networks", category: "AI & Machine Learning" },
-  { name: "Computer Vision", category: "AI & Machine Learning" },
+  { name: "Prompt engineering", category: "AI & Machine Learning" },
   { name: "RAG", category: "AI & Machine Learning" },
   { name: "Model Fine-Tuning", category: "AI & Machine Learning" },
   { name: "Feature Engineering", category: "AI & Machine Learning" },
   { name: "AI Agent", category: "AI & Machine Learning" },
+  { name: "ROUGE, MRR", category: "AI & Machine Learning" },
+  { name: "DeepSpeed, MLflow", category: "AI & Machine Learning" },
 
   // Programming & Frameworks
   { name: "Python", category: "Programming & Frameworks" },
@@ -20,6 +22,9 @@ export const skills = [
   { name: "Flask/FastAPI", category: "Programming & Frameworks" },
   { name: "React/Typescript", category: "Programming & Frameworks" },
   { name: "JavaScript", category: "Programming & Frameworks" },
+  { name: "OAuth2, JWT", category: "Programming & Frameworks" },
+  { name: "Hugging Face", category: "Programming & Frameworks" },
+
   
   // Data Science & Analytics
   { name: "Data Analysis", category: "Data Science & Analytics" },
@@ -30,7 +35,8 @@ export const skills = [
   { name: "Graph DB", category: "Data Science & Analytics" },
   { name: "Matplotlib/Seaborn", category: "Data Science & Analytics" },
   { name: "PostgreSQL/MongoDB", category: "Data Science & Analytics" },
-
+  { name: "Airflow", category: "Data Science & Analytics" },
+  { name: "Spark", category: "Data Science & Analytics" },
   // MLOps & Integration
   { name: "Model Deployment", category: "MLOps & Integration" },
   { name: "API Integration", category: "MLOps & Integration" },
@@ -40,6 +46,8 @@ export const skills = [
   { name: "Docker/Kubernetes", category: "MLOps & Integration", logoUrl: "https://iili.io/KjVscWF.md.png" },
   { name: "Git/GitHub", category: "MLOps & Integration" },
   { name: "Cloud - Azure/AWS", category: "MLOps & Integration" },
+  { name: "Terraform", category: "MLOps & Integration" },
+  { name: "Grafana", category: "MLOps & Integration" },
   
   // Old skills to be filtered out if not in new categories
   { name: "JavaScript", category: "Language and Database", logoUrl: "https://i.ibb.co/QFpQZJxx/images.jpg" },

@@ -43,10 +43,15 @@ export function ContactForm() {
       .then(async (res) => {
         const json = await res.json().catch(() => ({}));
         if (res.ok) {
-          toast({
+          const { dismiss } = toast({
             title: "Message Sent!",
-            description: json?.message ?? "Thanks for reaching out. I'll get back to you shortly.",
+            description: "Thanks for your Email. I will get back to you.",
+            duration: 5000,
           });
+          // Auto-dismiss after 5 seconds
+          setTimeout(() => {
+            dismiss();
+          }, 5000);
           form.reset();
         } else {
           toast({
