@@ -67,8 +67,8 @@ export default function HeroSection() {
                                 </a>
 
                                 <a
-                                    href="tel:+8801755839248"
-                                    aria-label="Call phone number +880 1755839248"
+                                    href="tel:+610493635325"
+                                    aria-label="Call phone number +610493635325"
                                     className="group flex w-full h-full min-h-[96px] flex-col items-center justify-center gap-1 p-4 rounded-xl bg-secondary hover:bg-primary/10 border border-border dark:border-primary/30 transition-all dark:hover:shadow-[0_0_20px_rgba(139,92,246,0.3)]"
                                 >
                                     <div className="flex items-center gap-2">
@@ -77,9 +77,9 @@ export default function HeroSection() {
                                     </div>
                                                         <p
                                                             className="text-xs sm:text-sm text-muted-foreground text-center truncate w-full max-w-[260px] mx-auto"
-                                                            title="+880 1755839248"
+                                                            title="+610493635325"
                                                         >
-                                                            +880 1755839248
+                                                            +610493635325
                                                         </p>
                                 </a>
 
