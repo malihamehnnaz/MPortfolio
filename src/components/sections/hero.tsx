@@ -44,7 +44,7 @@ export default function HeroSection() {
             </AnimatedDiv>
             <AnimatedDiv delay="0.2s">
                 <p className="mt-4 max-w-xl text-md text-muted-foreground">
-                MSc in Information Technology | Advanced Python| AI/ML, Gen AI, RAG Optimization | Cloud, DevOps, MLOps, LLMOps | Agentic Systems | LangGraph | LangChain | Docker | Monitoring & Intelligent Solutions
+                MSc in Information Technology | Advanced Python | AI/ML, Gen AI, RAG Optimization | Cloud, DevOps, MLOps, LLMOps | Agentic Systems | LangGraph | LangChain | Docker | Monitoring & Intelligent Solutions
                 </p>
             </AnimatedDiv>
             
