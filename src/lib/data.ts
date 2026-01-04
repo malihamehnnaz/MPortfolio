@@ -77,7 +77,7 @@ export const experiences = [
     role: "Innovation Team Manager",
     company: "Dexian Bangladesh",
     companyDetail: "(Multinational IT Consulting & Staffing Company, USA HQ)",
-    period: "Aug 2024 - Present",
+    period: "Aug 2024 - Dec 2025",
     companyUrl: "https://dexian.com/",
     logo: "/logos/dexian.png",
     description: "Leading a high-performing AI/ML and software development team focused on building next-generation digital solutions.",
