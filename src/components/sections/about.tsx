@@ -12,7 +12,7 @@ export default function AboutSection() {
   ];
 
   const expertise = [
-    "Advanced Python, FAST API, Software & Web Development 
+    "Advanced Python, FAST API, Software & Web Development", 
     "Machine Learning Model Development, Monitoring",
     "LLM, RAG Integration & Fine-tuning",
     "Multi Modal, Multi Agent Systems", 
