@@ -5,18 +5,18 @@ import { ChevronRight } from 'lucide-react';
 
 export default function AboutSection() {
   const stats = [
-    { value: '6+ Years', label: 'Experience' },
+    { value: '7+ Years', label: 'Experience' },
     { value: '50+', label: 'Projects Delivered' },
     { value: '12+', label: 'Team Members' },
     { value: '10k+', label: 'Users Impacted' },
   ];
 
   const expertise = [
-    "Machine Learning Model Development",
-    "LLM Integration & Fine-tuning",
-    "Development & CI/CD Pipelines",
-    "Computer Vision & NLP Applications",
+    "Advanced Python, FAST API, Software & Web Development 
+    "Machine Learning Model Development, Monitoring",
+    "LLM, RAG Integration & Fine-tuning",
     "Multi Modal, Multi Agent Systems", 
+    "DevOps, MLOps, LLMOps & Automated CI/CD Pipelines",
   ];
 
   return (
