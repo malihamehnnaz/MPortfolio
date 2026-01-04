@@ -30,13 +30,13 @@ export default function AboutSection() {
             <div className="md:col-span-3">
                  <AnimatedDiv delay="0.1s">
                     <p className="text-sm text-muted-foreground text-left mb-4">
-                        AI Solutions Architect with 6+ years of experience designing, deploying, and scaling production-grade AI/ML and generative systems on Azure.
+                        Senior Python Developer & AI Solutions Architect with 7+ years of experience delivering production-grade AI, machine learning & generative AI systems on Azure.
                     </p>
                     <p className="text-sm text-muted-foreground text-left mb-4">
-                       Proven record of improving enterprise efficiency and reducing cloud costs through optimized MLOps, LLM-based automation, and strategic AI adoption. 
+                       Strong foundation in Python, including OOP, async Python, FAST APIs, microservices, and data processing, combined with deep expertise in DevOps, MLOps & LLMOps to enable reliable model deployment and monitoring. Expertise in designing Python architectures, building automated CI/CD pipelines, implementing ML models & LLM-driven applications. 
                     </p>
                     <p className="text-sm text-muted-foreground text-left">
-                        Experienced in building retrieval-augmented and agentic AI pipelines that transform data into measurable business outcomes.
+                        Experience in retrieval-augmented and agent-based solutions, translating complex technical systems into measurable business outcomes, including improved efficiency, reduced costs & faster delivery
                     </p>
                 </AnimatedDiv>
             </div>
